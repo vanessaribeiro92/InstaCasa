@@ -1,0 +1,1910 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./typography.scss";
+@import "./layout.scss";
+
+.container {
+  padding: 10px 10px;
+}
+// header
+
+.navbar {
+  background-color: $white;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-brand {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  img {
+    width: 100%;
+    height: 70px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $darkGray;
+  font-weight: bold;
+}
+
+@media screen {
+  @media (min-width: $laptop) {
+    .navbar {
+      padding: 0.5rem 2rem;
+    }
+    .navbar-brand {
+      width: 50%;
+      img {
+        width: 33%;
+        height: 80px;
+      }
+    }
+  }
+}
+
+// slider
+.carousel {
+  height: 200px;
+}
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-item {
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .carousel {
+      height: 330px;
+    }
+
+    .carousel-item {
+      img {
+        height: 330px;
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .carousel {
+      height: 400px;
+    }
+
+    .carousel-item {
+      img {
+        height: 400px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .carousel {
+      height: 500px;
+    }
+
+    .carousel-item {
+      img {
+        height: 500px;
+      }
+    }
+  }
+
+  // @media (min-width)
+}
+
+// videoBanner
+.videoBanner {
+  background-image: url("../images/bgVideo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  .containerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+
+    .videoBannerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        font-size: 26px;
+        text-align: center;
+        line-height: 30px;
+        font-family: "Product-Sans-Bold", sans-serif;
+        font-weight: 600;
+        margin-top: 100px;
+        padding: 0px 10px;
+      }
+
+      .text {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Product-Sans-Regular", sans-serif;
+        padding: 0px 10px;
+      }
+      .video-play {
+        .icon-play {
+          width: 60px;
+          height: 60px;
+          margin-top: 20px;
+          border-radius: 50px;
+          box-shadow: 0px 8px 18px #00000050;
+          &:hover {
+            box-shadow: 0px 8px 18px #00000091;
+          }
+        }
+      }
+    }
+
+    .meetNewHouse {
+      width: 280px;
+      height: 68px;
+      background-color: $black;
+      text-align: center;
+      position: relative;
+      top: 90px;
+      left: 0px;
+
+      .meetNewHouseButton {
+        font-family: "Montserrat-SemiBold";
+        font-size: 15px;
+        width: 100%;
+        padding: 13px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $white;
+        text-decoration: none;
+
+        .icon-arrowWhite {
+          width: 15px;
+          height: 15px;
+          transform: rotate(270deg);
+          margin-left: 10px;
+          // margin-top: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .videoBanner {
+      .containerContent {
+        height: 500px;
+        max-width: 750px;
+
+        .videoBannerContainer {
+          max-width: 930px;
+          .title {
+            font-size: 30px;
+          }
+          .text {
+            font-size: 30px;
+          }
+        }
+
+        .meetNewHouse {
+          top: 93px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .videoBanner {
+      .containerContent {
+        max-width: 1024px;
+      }
+    }
+  }
+}
+
+// Info
+.info {
+  max-width: 975px;
+  margin: auto;
+  padding: 50px 10px 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "vilaPorto vilaPorto"
+    "water eletricity"
+    "asphaltGuides infrastructure"
+    "land financing"
+    "detailedPlan detailedPlan";
+
+  .vilaPortoLogo {
+    grid-area: vilaPorto;
+    width: 200px;
+    height: 140px;
+    margin: auto;
+
+    .imgBox {
+      background-image: url("../images/logoEmpreendimento.jpg");
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .waterAndSewage {
+    grid-area: water;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .asphaltGuidesAndGutters {
+    grid-area: asphaltGuides;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .land {
+    grid-area: land;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .electricityAndlighting {
+    grid-area: eletricity;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .completeInfrastructure {
+    grid-area: infrastructure;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .facilitatedFinancing {
+    grid-area: financing;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .detailedPlan {
+    grid-area: detailedPlan;
+    // width: 200px;
+    height: 300px;
+    margin: auto;
+    max-height: 370px;
+
+    p {
+      font-size: 14px;
+      // margin-top: 15px;
+      line-height: 22px;
+    }
+
+    .imgDetailedPlan {
+      // background-image: url('../images/planta.jpg');
+      width: 95%;
+      // height: 140px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      margin: auto;
+      height: 300px;
+      max-height: 300px;
+      img {
+        width: 100%;
+        margin-top: 20px;
+        max-height: 300px;
+      }
+    }
+
+    .modal {
+      padding-right: 0px !important;
+    }
+    .modal-body {
+      min-height: 285px;
+      max-height: 380px;
+
+      .imgPlan {
+        width: 95%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .modal-dialog {
+      max-width: 420px;
+      margin: 50px auto;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .info {
+      padding: 50px 30px 20px;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto"
+        "water detailedPlan detailedPlan detailedPlan detailedPlan eletricity"
+        "asphaltGuides detailedPlan detailedPlan detailedPlan detailedPlan infrastructure"
+        "land detailedPlan detailedPlan detailedPlan detailedPlan financing";
+
+      .detailedPlan {
+        margin: auto;
+        // height: 354px;
+        max-width: 354px;
+
+        .imgDetailedPlan {
+          margin-top: 0px;
+          max-height: 354px;
+          // width: 100%;
+
+          img {
+            margin-top: 0px;
+          }
+        }
+        .modal-body {
+          min-height: 565px;
+
+          .imgPlan {
+            width: 75%;
+            margin: auto;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .modal-dialog {
+          max-width: 710px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .info {
+      .waterAndSewage {
+        grid-area: water;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .asphaltGuidesAndGutters {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .land {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .electricityAndlighting {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .completeInfrastructure {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .facilitatedFinancing {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .detailedPlan {
+        margin: auto;
+        height: 354px;
+        max-width: 354px;
+
+        .imgDetailedPlan {
+          width: 100%;
+          margin: auto;
+
+          img {
+            max-height: 354px;
+          }
+        }
+
+        .modal-body {
+          min-height: 610px;
+
+          .imgPlan {
+            width: 75%;
+            margin: auto;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .modal-dialog {
+          max-width: 830px;
+        }
+      }
+    }
+  }
+}
+
+// Status/ Type
+
+.statusType {
+  display: flex;
+  flex-direction: column;
+  // margin: 10px 40px;
+  max-width: 223px;
+  margin: auto;
+
+  .statusTypeContainer {
+    .title {
+      color: $yellow;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: start;
+    }
+
+    .buttonBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .statusTypeButton {
+        width: 225px;
+        // width: 200px;
+        // width: 140px;
+        height: 45px;
+        border: $gray 1px solid;
+        border-left: $yellow 8px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0px;
+        p {
+          margin-left: 10px;
+          font-weight: bold;
+          text-align: start;
+          // font-size: 15px;
+          font-size: 13px;
+        }
+
+        .icon-info {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .statusType {
+      max-width: 490px;
+      margin: 30px auto;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      place-content: space-around;
+
+      .statusTypeContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// galery
+.page-wrapper {
+  padding: 0px 10px;
+  margin: auto;
+  max-width: 300px;
+
+  .post-slider {
+    // border: 1px solid red;
+    position: relative;
+    margin: auto;
+
+    .prev {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      cursor: pointer;
+      z-index: 9999999;
+    }
+
+    .next {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      cursor: pointer;
+      z-index: 9999999;
+    }
+
+    .post-wrapper {
+      width: 84%;
+      height: 220px;
+      margin: 10px auto;
+      overflow: hidden;
+      // border: 1px dashed red;
+      // padding: 5px 0px;
+
+      .post {
+        width: 200px;
+        height: 200px;
+        margin: 10px 10px;
+        display: inline-block;
+        // background: blue;
+        // box-shadow: 1rem 1rem 0.65rem -1rem #212529d1;
+        // #a0a0a033;
+
+        .slider-image {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .page-wrapper {
+      max-width: 700px;
+      .post-slider {
+        .prev {
+          left: 20px;
+        }
+        .next {
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .page-wrapper {
+      max-width: 975px;
+      .post-slider {
+        .prev {
+          left: 30px;
+        }
+        .next {
+          right: 30px;
+        }
+      }
+    }
+  }
+}
+
+// Google Map
+.cardMap {
+  position: relative;
+  top: 55px;
+  width: 300px;
+  height: 75px;
+  z-index: 999;
+  margin: auto;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0rem 2rem 3rem -1rem #212529ad;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin-left: 5px;
+  }
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: $yellow 3px solid;
+    position: relative;
+    top: 30px;
+    right: -3px;
+    z-index: 9999;
+  }
+}
+.mapContainer {
+  height: 100%;
+  margin: 0px;
+  padding: 20px 0px;
+  .map {
+    height: 400px;
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .mapContainer {
+      height: 100%;
+      margin: 0px;
+      padding: 20px 0px 50px;
+      .map {
+        height: 500px;
+      }
+    }
+  }
+}
+// Steps
+
+.steps {
+  padding: 20px 5px;
+  width: 300px;
+  margin: 0px auto;
+  max-width: 450px;
+
+  .text {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat-Medium", sans-serif;
+    line-height: 30px;
+  }
+
+  .titleContainer {
+    // padding: 30px 10px;
+    text-align: center;
+    background-color: $white;
+    height: 100px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    .title {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      margin: auto;
+      line-height: 30px;
+      max-width: 275px;
+      font-family: "Product-Sans-Regular", sans-serif;
+
+      b {
+        font-family: "Montserrat-Bold", sans-serif;
+      }
+    }
+
+    // span {
+    // text-align: center;
+    // position: absolute;
+    // z-index: 999;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    &::after {
+      content: "";
+      background-image: url("../images/icons/icone-quadrado.svg");
+      width: 40px;
+      height: 80px;
+      position: relative;
+      top: -35px;
+      right: -51px;
+      z-index: 9999;
+    }
+  }
+
+  .iconsSteps {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "step1"
+      "step2"
+      "step3"
+      "step4";
+
+    .step1 {
+      grid-area: step1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 30px;
+      p {
+        margin-top: 15px;
+        // font semi bold
+      }
+    }
+    .step2 {
+      grid-area: step2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 30px;
+      p {
+        margin-top: 15px;
+        // font semi bold
+      }
+    }
+    .step3 {
+      grid-area: step3;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 20px;
+      p {
+        margin-top: 15px;
+        // font semi bold
+      }
+    }
+    .step4 {
+      grid-area: step4;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 30px;
+
+      p {
+        margin-top: 15px;
+        // font semi bold
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .steps {
+      max-width: 730px;
+      width: 730px;
+      padding: 10px 40px;
+      margin: auto;
+      .titleContainer {
+        max-width: 450px;
+        flex-direction: row;
+        width: 450px;
+        height: 64px;
+        .title {
+          max-width: 385px;
+        }
+        &::after {
+          content: "";
+          width: 50px;
+          height: 50px;
+          top: 0px;
+          right: 60px;
+        }
+      }
+
+      .iconsSteps {
+        position: relative;
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "step1 step2  step3 step4";
+
+        .step1 {
+          &:after {
+            content: "";
+            background-image: url("../images/icons/linha-separador.svg");
+            display: block;
+            width: 80px;
+            height: 16px;
+            position: absolute;
+            left: 124px;
+            top: 23px;
+            z-index: 4;
+          }
+        }
+
+        .step2 {
+          &:after {
+            content: "";
+            background-image: url("../images/icons/linha-separador.svg");
+            display: block;
+            width: 80px;
+            height: 16px;
+            position: absolute;
+            left: 295px;
+            top: 104px;
+            transform: rotate(180deg);
+            z-index: 4;
+          }
+        }
+
+        .step3 {
+          width: 120px;
+          &:after {
+            content: "";
+            background-image: url("../images/icons/linha-separador.svg");
+            display: block;
+            width: 80px;
+            height: 16px;
+            position: absolute;
+            left: 465px;
+            top: 23px;
+            z-index: 4;
+          }
+        }
+      }
+    }
+  }
+}
+
+// benefitCard
+.divider {
+  border-bottom: 1px solid $gray2;
+  width: 80%;
+  margin: 20px auto;
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .divider {
+      width: 700px;
+      margin: 20px auto;
+    }
+  }
+  @media (min-width: $laptop) {
+    .divider {
+      width: 910px;
+      margin: 20px auto;
+    }
+  }
+}
+.benefitCardContainer {
+  max-width: 320px;
+  margin: auto auto 60px;
+}
+.benefitCard {
+  margin-top: 40px;
+  padding: 0px 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "infoContent"
+    "cardsVilaPorto"
+    "benefit1"
+    "benefit2"
+    "benefit3"
+    "benefit4";
+
+  .cardsVilaPorto {
+    grid-area: cardsVilaPorto;
+    img {
+      object-fit: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+  }
+
+  .infoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: infoContent;
+    p {
+      text-align: center;
+      font-family: "Montserrat-Medium", sans-serif;
+      line-height: 30px;
+      font-size: 16px;
+    }
+    h4 {
+      font-weight: bold;
+      text-align: center;
+      font-family: "Product-Sans-Bold", sans-serif;
+      font-size: 30px;
+    }
+  }
+
+  .benefit1 {
+    grid-area: benefit1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px;
+    p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif;
+    }
+  }
+
+  .benefit2 {
+    grid-area: benefit2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 18px;
+    p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif;
+    }
+  }
+
+  .benefit3 {
+    grid-area: benefit3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px;
+    p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif;
+    }
+  }
+
+  .benefit4 {
+    grid-area: benefit4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px;
+    p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .benefitCardContainer {
+      max-width: 768px;
+    }
+    .benefitCard {
+      // margin-top: 30px;
+      padding: 0px 10px;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "cardsVilaPorto cardsVilaPorto infoContent infoContent"
+        "benefit1 benefit2 benefit3 benefit4";
+
+      .infoContent {
+        padding: 0px 20px;
+        p {
+          text-align: start;
+        }
+        h4 {
+          text-align: start;
+        }
+      }
+
+      .benefit2 {
+        margin: 20px 5px;
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .benefitCard {
+      max-width: 910px;
+      grid-gap: 20px;
+
+      .cardsVilaPorto {
+        img {
+          width: 90%;
+        }
+      }
+
+      .infoContent {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+//  carousel QRCode
+
+.carouselQRCode {
+  // padding: 20px 10px;
+  width: 300px;
+  margin: 30px auto;
+  max-width: 450px;
+
+  .titleContainer {
+    text-align: center;
+    // height: 200px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    .title {
+      margin: auto;
+      line-height: 30px;
+      max-width: 280px;
+      margin-bottom: 24px;
+      width: 280px;
+      height: 46px;
+    }
+    &::after {
+      content: "";
+      background-image: url(../images/icons/icone-quadrado.svg);
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -146px;
+      right: 84px;
+      z-index: 9999;
+    }
+
+    .subTitle {
+      font-weight: bold;
+      font-size: 27px;
+      margin: auto;
+      line-height: 30px;
+      max-width: 275px;
+      margin-top: 10px;
+      // margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .carouselQRCode {
+      width: 700px;
+      margin: 30px auto;
+      max-width: 700px;
+      /* display: flex; */
+      /* flex-direction: column; */
+      height: 97px;
+
+      .titleContainer {
+        text-align: center;
+        width: 700px;
+        /* align-content: space-between;*/
+
+        .title {
+          max-width: 700px;
+          // margin-bottom: 15px;
+          width: 700px;
+          font-family: "Product-Sans-Regular", sans-serif;
+          margin-bottom: 0px;
+          line-height: 38px;
+          font-size: 30px;
+        }
+        &::after {
+          top: -77px;
+          right: 243px;
+        }
+        .subTitle {
+          line-height: 30px;
+          max-width: 700px;
+          margin-top: 0px;
+          font-family: "Product-Sans-Regular", sans-serif;
+          // font-weight: bold;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.page-wrapper2 {
+  display: grid;
+  height: 620px;
+  &::after {
+    content: "";
+    background-color: $lightYellow;
+    width: 100%;
+    height: 400px;
+    z-index: -9999;
+    position: relative;
+    top: -334px;
+    left: 0px;
+  }
+
+  // .bgCarouselQRCode{
+  //   background-color: $lightYellow;
+  //   width: 100%;
+  //   height: 400px;
+  //   z-index: -9999;
+  //   position: relative;
+  //   top: 200px;
+  // }
+
+  .post-slider2 {
+    max-width: 300px;
+    margin: auto;
+    // border: 1px solid red;
+    position: relative;
+
+    .prev2 {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      cursor: pointer;
+    }
+    .next2 {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .icon-prevCircle {
+      width: 25px;
+      height: 25px;
+    }
+
+    .icon-nextCircle {
+      width: 25px;
+      height: 25px;
+    }
+
+    .post-wrapper2 {
+      width: 84%;
+      height: 534px;
+      margin: 10px auto;
+      overflow: hidden;
+      // border: 1px dashed red;
+      // padding: 5px 0px;
+
+      .post {
+        width: 234px !important;
+        height: 513px;
+        margin: 10px 9px;
+        display: inline-block;
+        // background: blue;
+        // box-shadow: 1rem 1rem 0.65rem -1rem #212529d1;
+        // #a0a0a033;
+        .slider-image {
+          width: 100%;
+          height: 200px;
+        }
+      }
+
+      .post-info {
+        .infoCardQRCode {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "titleCard titleCard"
+            "description1 descriptionValue1"
+            "description2 descriptionValue2"
+            "description3 descriptionValue3"
+            "description4 descriptionValue4"
+            "qrCode qrCodeInstructions";
+          width: 235px;
+          margin: auto;
+          padding-bottom: 25px;
+          // border: 1px solid $gray;
+          background-color: $white;
+
+          .titleCard {
+            grid-area: titleCard;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            height: 45px;
+            margin-left: 15px;
+            margin-top: 14px;
+            p {
+              font-family: "Product-Sans-Bold", sans-serif;
+              font-size: 20px;
+            }
+          }
+
+          .description1 {
+            grid-area: description1;
+            line-height: 16px;
+            font-size: 14px;
+            margin-left: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .descriptionValue1 {
+            grid-area: descriptionValue1;
+            text-align: end;
+            line-height: 16px;
+            font-size: 14px;
+            margin-right: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .description2 {
+            grid-area: description2;
+            line-height: 16px;
+            font-size: 14px;
+            margin-left: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .descriptionValue2 {
+            grid-area: descriptionValue2;
+            text-align: end;
+            line-height: 16px;
+            font-size: 14px;
+            margin-right: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .description3 {
+            grid-area: description3;
+            line-height: 16px;
+            font-size: 14px;
+            margin-left: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .descriptionValue3 {
+            grid-area: descriptionValue3;
+            text-align: end;
+            line-height: 16px;
+            font-size: 14px;
+            margin-right: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .description4 {
+            grid-area: description4;
+            line-height: 16px;
+            font-size: 14px;
+            margin-left: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .descriptionValue4 {
+            grid-area: descriptionValue4;
+            text-align: end;
+            line-height: 16px;
+            font-size: 14px;
+            margin-right: 15px;
+            font-weight: bold;
+            p {
+              font-family: "Montserrat-Semibold", sans-serif;
+            }
+          }
+
+          .qrCode {
+            grid-area: qrCode;
+            margin-left: 15px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .qrCodeInstructions {
+            grid-area: qrCodeInstructions;
+            line-height: 16px;
+            font-size: 10px;
+            margin-right: 10px;
+            p {
+              font-family: "Montserrat-Medium", sans-serif;
+              a {
+                font-weight: bold;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .page-wrapper2 {
+      .post-slider2 {
+        max-width: 599px;
+
+        .icon-nextCircle {
+          width: 30px;
+          height: 30px;
+        }
+        .icon-prevCircle {
+          width: 30px;
+          height: 30px;
+        }
+
+        .prev2 {
+          left: 20px;
+        }
+        .next2 {
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .page-wrapper2 {
+      .post-slider2 {
+        max-width: 894px;
+        .prev2 {
+          left: 30px;
+        }
+        .next2 {
+          right: 30px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .page-wrapper2 {
+      .post-slider2 {
+        .prev2 {
+          left: 25px;
+        }
+        .next2 {
+          right: 25px;
+        }
+      }
+    }
+  }
+}
+
+// app
+
+.app {
+  max-width: 300px;
+  width: 300px;
+  margin: auto;
+  padding: 50px 0px 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "appInfo"
+    "appButtons"
+    "phoneImg";
+
+  .appInfo {
+    grid-area: appInfo;
+    padding: 25px;
+    margin: auto;
+    .title {
+      margin-bottom: 10px;
+      font-size: 25px;
+      font-family: "Product-Sans-Regular", sans-serif;
+
+      b {
+        font-family: "Product-Sans-Bold", sans-serif;
+        font-weight: 600;
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      font-family: "Montserrat-Medium", sans-serif;
+    }
+  }
+
+  .appButtons {
+    grid-area: appButtons;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .playStore {
+      width: 280px;
+      background-color: $green;
+      padding: 5px;
+
+      .btnPlayStore {
+        display: flex;
+        color: $white;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .appStore {
+      width: 280px;
+      background-color: $blue;
+      padding: 5px;
+
+      .btnAppStore {
+        display: flex;
+        color: $white;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .phoneImg {
+    grid-area: phoneImg;
+    margin: auto;
+
+    img {
+      width: 300px;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .app {
+      max-width: 750px;
+      width: 750px;
+      margin: auto;
+      padding: 50px 0px 50px;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "phoneImg appInfo"
+        "phoneImg appButtons";
+
+      .appInfo {
+        padding: 0px;
+        margin-right: 50px;
+
+        .title {
+          font-size: 30px;
+          line-height: 35px;
+          margin-bottom: 15px;
+        }
+
+        .text {
+          line-height: 30px;
+        }
+      }
+
+      .appButtons {
+        align-items: start;
+
+        .playStore {
+          width: 230px;
+          
+          p {
+            font-family: 'Montserrat-Medium';
+            font-size: 14px;
+          }
+        }
+        .appStore {
+          width: 230px;
+          font-family: 'Montserrat-Medium';
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media (min-width: $laptop) {
+    .app {
+      max-width: 910px;
+      width: 910px;
+
+      .phoneImg {
+        img {
+          width: 100%;
+        }
+      }
+
+      .appInfo {
+        padding: 0px;
+        margin: 115px 30px 0px 0px;
+
+        .title {
+          font-size: 30px;
+          line-height: 35px;
+          margin-bottom: 15px;
+        }
+
+        .text {
+          line-height: 30px;
+        }
+      }
+
+      .appButtons {
+        align-items: start;
+        height: 225px;
+        justify-content: start;
+
+        .playStore {
+          box-shadow: rgba(45,45,45,0.15);
+          margin-bottom: 15px;
+        }
+        .appStore {
+          margin-bottom: 15px;
+          box-shadow: rgba(45,45,45,0.15);
+        }
+      }
+    }
+  }
+}
+
+// Virtual Tour 360
+
+.virtualTour {
+  img {
+    width: 100%;
+  }
+}
+
+// Contact form
+
+.contactForm {
+  max-width: 300px;
+  width: 300px;
+  height: 5900px;
+  max-height: 590px;
+  margin: auto;
+  padding: 0px 0px 20px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "messageContactForm"
+    "bootstrapContactForm";
+
+  .messageContactForm {
+    grid-area: messageContactForm;
+    font-size: 30px;
+    padding: 15px 24px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 34px;
+    margin-bottom: 10px;
+    p {
+      font-family: "Product-Sans-Regular", sans-serif;
+
+      b {
+        font-family: "Product-Sans-Bold", sans-serif;
+      }
+    }
+  }
+
+  .bootstrapContactForm {
+    grid-area: bootstrapContactForm;
+
+    #contact {
+      margin-top: 0px;
+      // min-height: 40vh;
+      // max-height: 40vh;
+    }
+
+    .contact {
+      .container {
+        padding: 0px 5px 10px;
+      }
+    }
+
+    .contact p {
+      margin-top: 50px;
+    }
+
+    .form-contact {
+      width: 87%;
+      margin: 0 auto;
+
+      .form-group {
+        width: 252px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .form-control {
+      // color: $gray !important;
+      font-weight: bold;
+      border: 1px solid $gray2;
+      border-radius: 0px;
+      font-size: 16px;
+      font-family: "Montserrat-Regular",sans-serif;
+    }
+
+    span.error {
+      font-size: 12px;
+      font-weight: bold;
+      color: red;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .containerBtn {
+      display: flex;
+      justify-content: center;
+      .btn-primary {
+        background-color: $black;
+        border-color: black;
+        font-weight: bold;
+        border-radius: 0px;
+        width: 100%;
+  
+        &:hover {
+          background-color: $yellow;
+          color: $black;
+          border-color: $yellow;
+        }
+      }
+    }
+    
+    input.error,
+    textarea.error {
+      border-color: red;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .contactForm {
+      max-width: 700px;
+      width: 700px;
+      height: 445px;
+      max-height: 445px;
+      margin-top: 50px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "messageContactForm bootstrapContactForm";
+
+      .messageContactForm {
+        font-size: 25px;
+        padding: 75px 15px 15px;
+        align-items: flex-start;
+      }
+
+      .bootstrapContactForm {
+        .form-contact {
+          width: 100%;
+
+          .form-group {
+            width: 100%;
+          }
+
+          .btn-primary {
+            width: 40%;
+          }
+        }
+      }
+    }
+
+    @media (min-width: $laptop) {
+      .contactForm {
+        width: 910px;
+        max-width: 910px;
+        grid-gap:90px;
+
+        .messageContactForm {
+          padding: 75px 65px 15px 15px;
+        }
+
+      }
+    }
+  }
+}
+
+// footer
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 300px;
+  margin: auto;
+
+  .logo {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+
+  .text {
+    padding: 0px 20px 20px;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 10px;
+    margin: auto;
+  }
+}
+
+@media screen {
+  @media (min-width: $tablet) {
+    .footer {
+      flex-direction: row;
+      max-width: 700px;
+      width: 700px;
+
+      .logo {
+        img {
+          width: 90%;
+        }
+      }
+
+      .text {
+        max-width: 50%;
+        padding: 0px 10px 10px;
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .footer {
+      flex-direction: row;
+      max-width: 1000px;
+      width: 1000px;
+
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+
+      .text {
+        max-width: 50%;
+        padding: 0px 10px 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal-video.min.css">
+  <title>InstaCasa - Vila Porto</title>
+</head>
+
+<body>
+  <!-- header -->
+  <!-- <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" mb-0 href="#">
+        <img src="./images/logoInstaCasa.svg" class="d-inline-block align-top" alt="InstaCasa">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Saiba mais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header> -->
+
+  <!-- Welcome - slider-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/banner.jpg" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/banner.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/banner.jpg" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <!-- Video -->
+  <section class="videoBanner">
+    <div class="containerContent">
+      <div class="videoBannerContainer">
+        <h4 class="title">Um bairro planejado para viver bem.</h4>
+        <p class="text">Tenha o privilégio de morar com qualidade de vida, num bairro planejado para você e sua família.
+        </p>
+
+        <button class="video-play" data-video-id="xcJtL7QggTI">
+          <img class="icon-play" src="./images/icons/icone-play.png" />
+        </button>
+      </div>
+
+      <button class="meetNewHouse">
+        <a href="#info" class="meetNewHouseButton">
+          <p>conheça a sua nova casa</p>
+          <i class="icon-arrowWhite"></i>
+        </a>
+      </button>
+    </div>
+    <!-- <a href="#" class="js-video-button" data-video-id='u65n-osqti8&list=WL&index=3&t=0s'>Yotube Video</a> -->
+
+  </section>
+
+
+  <!-- info -->
+  <div class="info" id="info">
+    <div class="vilaPortoLogo">
+      <div class="imgBox"></div>
+    </div>
+    <div class="waterAndSewage">
+      <i class="icon-water"></i>
+      <p class="">Água e esgoto</p>
+    </div>
+    <div class="asphaltGuidesAndGutters">
+      <i class="icon-asphalt"></i>
+      <p class="">Asfalto Guias e sarjetas</p>
+    </div>
+    <div class="land">
+      <i class="icon-land"></i>
+      <p class="">Terrenos a partir de 140m²</p>
+    </div>
+    <div class="electricityAndlighting">
+      <i class="icon-electricity"></i>
+      <p class="">Energia elétrica e iluminação</p>
+    </div>
+    <div class="completeInfrastructure">
+      <i class="icon-infrastructure"></i>
+      <p class="">Infraestrutura completa</p>
+    </div>
+    <div class="facilitatedFinancing">
+      <i class="icon-financing"></i>
+      <p class="">Financiamento Facilidato</p>
+    </div>
+
+    <div class="detailedPlan">
+      <!-- image zoom in/zoom out -->
+      <button type="button" data-toggle="modal" data-target="#detailedPlan">
+        <div class="imgDetailedPlan">
+          <img src="./images/planta-com-lupa.jpg">
+        </div>
+      </button>
+      <!-- inside modal -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="detailedPlan">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        </button>
+
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="imgPlan">
+                <img src="./images/planta.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- status/ type -->
+  <div class="statusType">
+    <!-- status -->
+    <div class="statusTypeContainer">
+      <p class="title">Status</p>
+      <div class="buttonBox">
+        <button class="statusTypeButton" type="button" data-toggle="modal" data-target="#status">
+          <p>Pronto pra morar</p>
+          <i class="icon-info"></i>
+        </button>
+      </div>
+    </div>
+    <!-- inside -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="status">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Status</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Texto do corpo do modal, é aqui.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Type -->
+    <div class="statusTypeContainer">
+      <p class="title">Tipo</p>
+      <div class="buttonBox">
+        <button class="statusTypeButton" type="button" data-toggle="modal" data-target="#type">
+          <p>Fechado</p>
+          <i class="icon-info"></i>
+        </button>
+      </div>
+    </div>
+    <!-- inside -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="type">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tipo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Texto do corpo do modal, é aqui.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- galery -->
+
+  <div class="page-wrapper">
+    <!-- Post Slider -->
+    <div class="post-slider">
+      <i class="icon-prev prev"></i>
+      <i class="icon-next next"></i>
+      <div class="post-wrapper">
+        <div class="post">
+          <img src="./images/galeria01.jpg" alt="Empreendimento 1" class="slider-image">
+        </div>
+        <div class="post">
+          <img src="./images/galeria02.jpg" alt="Empreendimento 2" class="slider-image">
+        </div>
+        <div class="post">
+          <img src="./images/galeria03.jpg" alt="Empreendimento 3" class="slider-image">
+        </div>
+        <div class="post">
+          <img src="./images/galeria01.jpg" alt="Empreendimento 1" class="slider-image">
+        </div>
+        <div class="post">
+          <img src="./images/galeria02.jpg" alt="Empreendimento 2" class="slider-image">
+        </div>
+        <div class="post">
+          <img src="./images/galeria03.jpg" alt="Empreendimento 3" class="slider-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+
+  <div class="cardMap">
+    <i class="icon-pin"></i>
+    <p>Estrada do Sapiantã, Itapevi - SP</p>
+  </div>
+  <div class="mapContainer">
+    <div class="map" id="map"></div>
+  </div>
+
+  <!-- Steps -->
+
+  <div class="steps" id="about">
+    <div class="titleContainer">
+      <h4 class="title">O sonho da sua casa <b> Num Click.</b></h4>
+    </div>
+    <p class="text">Chegar até a casa dos sonhos ficou muito mais fácil. Nós ajudamos você desde o início, passando pelo
+      financiamento, até a construção da sua Casa.</p>
+
+    <div class="iconsSteps">
+      <div class="step1">
+        <i class="icon-buyLand"></i>
+        <p>Compre o seu terreno</p>
+      </div>
+      <div class="step2">
+        <i class="icon-chooseProject"></i>
+        <p>Escolha o seu Projeto</p>
+      </div>
+      <div class="step3">
+        <i class="icon-financingLand"></i>
+        <p>Financie o lote e construção</p>
+      </div>
+      <div class="step4">
+        <i class="icon-startBuild"></i>
+        <p>Comece a construir</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- benefitCard -->
+  <div class="divider"></div>
+  <div class="benefitCard benefitCardContainer">
+    <div class="cardsVilaPorto">
+      <img src="./images/imgCartoes.jpg" alt="Cartões da Vila Porto">
+    </div>
+    <div class="infoContent">
+      <h4>#AquiTemInstaCasa</h4>
+      <p>Ao comprar um lote neste empreendimento você receberá um cartão do seu lote. Ele dará acesso a vantagens exclusivas através da plataforma e do app da InstaCasa.</p>
+    </div>
+    <div class="benefit1">
+      <i class="icon-project"></i>
+      <p>Projeto <br/>Arquitetônico</p>
+    </div>
+    <div class="benefit2">
+      <i class="icon-facilityFinancing"></i>
+      <p>Financiamento imobiliário facilitado</p>
+    </div>
+    <div class="benefit3">
+      <i class="icon-augmentedReality"></i>
+      <p>Realidade Aumentada</p>
+    </div>
+    <div class="benefit4">
+      <i class="icon-club"></i>
+      <p>Clube de <br/>Benefícios</p>
+    </div>
+  </div>
+
+  <!-- carousel QRCode -->
+  <div class="carouselQRCode" id="projects">
+
+    <div class="titleContainer">
+      <h4 class="title">Temos projetos incríveis para Vila Porto</h4>
+      <h4 class="subTitle">Um deles é a sua casa</h4>
+    </div>
+  </div>
+
+  <div class="page-wrapper2">
+    <!-- Post Slider -->
+    <div class="post-slider2">
+      <i class="icon-prevCircle prev2"></i>
+      <i class="icon-nextCircle next2"></i>
+      <div class="post-wrapper2">
+        <div class="post">
+          <img src="./images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <div class="post-info">
+            <div class="infoCardQRCode">
+              <div class="titleCard">
+                <p>Projeto Belfast</p>
+              </div>
+              <div class="description1">
+                <p>Tamanho do lote</p>
+              </div>
+              <div class="descriptionValue1">
+                <p>175m²</p>
+              </div>
+              <div class="description2">
+                <p>Tipo do lote</p>
+              </div>
+              <div class="descriptionValue2">
+                <p>Plano</p>
+              </div>
+              <div class="description3">
+                <p>Suítes</p>
+              </div>
+              <div class="descriptionValue3">
+                <p>03</p>
+              </div>
+              <div class="description4">
+                <p>Tamanho da construção</p>
+              </div>
+              <div class="descriptionValue4">
+                <p>137m²</p>
+              </div>
+              <div class="qrCode">
+                <img src="./images/qrCode.jpg">
+              </div>
+              <div class="qrCodeInstructions">
+                <p>Aponte a câmera do seu celular ou <a href="LINK_DA_REALIDADE_AUMENTADA">clique aqui</a> e veja em
+                  Realidade Aumentada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <img src="./images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <div class="post-info">
+            <div class="infoCardQRCode">
+              <div class="titleCard">
+                <p>Projeto Belfast</p>
+              </div>
+              <div class="description1">
+                <p>Tamanho do lote</p>
+              </div>
+              <div class="descriptionValue1">
+                <p>175m²</p>
+              </div>
+              <div class="description2">
+                <p>Tipo do lote</p>
+              </div>
+              <div class="descriptionValue2">
+                <p>Plano</p>
+              </div>
+              <div class="description3">
+                <p>Suítes</p>
+              </div>
+              <div class="descriptionValue3">
+                <p>03</p>
+              </div>
+              <div class="description4">
+                <p>Tamanho da construção</p>
+              </div>
+              <div class="descriptionValue4">
+                <p>137m²</p>
+              </div>
+              <div class="qrCode">
+                <img src="./images/qrCode.jpg">
+              </div>
+              <div class="qrCodeInstructions">
+                <p>Aponte a câmera do seu celular ou <a href="LINK_DA_REALIDADE_AUMENTADA">clique aqui</a> e veja em
+                  Realidade Aumentada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <img src="./images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <div class="post-info">
+            <div class="infoCardQRCode">
+              <div class="titleCard">
+                <p>Projeto Belfast</p>
+              </div>
+              <div class="description1">
+                <p>Tamanho do lote</p>
+              </div>
+              <div class="descriptionValue1">
+                <p>175m²</p>
+              </div>
+              <div class="description2">
+                <p>Tipo do lote</p>
+              </div>
+              <div class="descriptionValue2">
+                <p>Plano</p>
+              </div>
+              <div class="description3">
+                <p>Suítes</p>
+              </div>
+              <div class="descriptionValue3">
+                <p>03</p>
+              </div>
+              <div class="description4">
+                <p>Tamanho da construção</p>
+              </div>
+              <div class="descriptionValue4">
+                <p>137m²</p>
+              </div>
+              <div class="qrCode">
+                <img src="./images/qrCode.jpg">
+              </div>
+              <div class="qrCodeInstructions">
+                <p>Aponte a câmera do seu celular ou <a href="LINK_DA_REALIDADE_AUMENTADA">clique aqui</a> e veja em
+                  Realidade Aumentada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <img src="./images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <div class="post-info">
+            <div class="infoCardQRCode">
+              <div class="titleCard">
+                <p>Projeto Belfast</p>
+              </div>
+              <div class="description1">
+                <p>Tamanho do lote</p>
+              </div>
+              <div class="descriptionValue1">
+                <p>175m²</p>
+              </div>
+              <div class="description2">
+                <p>Tipo do lote</p>
+              </div>
+              <div class="descriptionValue2">
+                <p>Plano</p>
+              </div>
+              <div class="description3">
+                <p>Suítes</p>
+              </div>
+              <div class="descriptionValue3">
+                <p>03</p>
+              </div>
+              <div class="description4">
+                <p>Tamanho da construção</p>
+              </div>
+              <div class="descriptionValue4">
+                <p>137m²</p>
+              </div>
+              <div class="qrCode">
+                <img src="./images/qrCode.jpg">
+              </div>
+              <div class="qrCodeInstructions">
+                <p>Aponte a câmera do seu celular ou <a href="LINK_DA_REALIDADE_AUMENTADA">clique aqui</a> e veja em
+                  Realidade Aumentada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <img src="./images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <div class="post-info">
+            <div class="infoCardQRCode">
+              <div class="titleCard">
+                <p>Projeto Belfast</p>
+              </div>
+              <div class="description1">
+                <p>Tamanho do lote</p>
+              </div>
+              <div class="descriptionValue1">
+                <p>175m²</p>
+              </div>
+              <div class="description2">
+                <p>Tipo do lote</p>
+              </div>
+              <div class="descriptionValue2">
+                <p>Plano</p>
+              </div>
+              <div class="description3">
+                <p>Suítes</p>
+              </div>
+              <div class="descriptionValue3">
+                <p>03</p>
+              </div>
+              <div class="description4">
+                <p>Tamanho da construção</p>
+              </div>
+              <div class="descriptionValue4">
+                <p>137m²</p>
+              </div>
+              <div class="qrCode">
+                <img src="./images/qrCode.jpg">
+              </div>
+              <div class="qrCodeInstructions">
+                <p>Aponte a câmera do seu celular ou <a href="LINK_DA_REALIDADE_AUMENTADA">clique aqui</a> e veja em
+                  Realidade Aumentada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- App -->
+  <div class="app">
+    <div class="phoneImg">
+      <img src="./images/img-smartphones.png">
+    </div>
+    <div class="appInfo">
+      <p class="title">Baixe o app da InstaCasa para uma <b>experiência incrível</b></p>
+      <p class="text">Através do app veja projetos de arquitetura desse empreendimento em realidade aumentada e muito
+        mais.</p>
+    </div>
+    <div class="appButtons">
+      <button class="playStore">
+        <a class="btnPlayStore" href="https://LINK_PLAY_STORE">
+          <i class="icon-playStore"></i>
+          <p>Baixar na Play Store</p>
+        </a>
+      </button>
+      <button class="appStore">
+        <a class="btnAppStore" href="https://LINK_APP_STORE">
+          <i class="icon-appStore"></i>
+          <p>Baixar na App Store</p>
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Virtual Tour 360 -->
+  <div class="virtualTour">
+    <img src="./images/tourVirtual.jpg">
+  </div>
+  <!-- contact form -->
+  <div class="contactForm" id="contact">
+    <div class="messageContactForm">
+      <p><b>Gostou?</b> Deixe seu contato para saber mais</p>
+    </div>
+    <div class="bootstrapContactForm">
+      <div id="contact" class="contact">
+        <div class="container">
+          <!-- Send form by NETLIFY -->
+          <form class="form-contact" name="contact" action="/success" netlify>
+            <!-- Name -->
+            <div class="form-group">
+              <input type="text" name="nome" class="form-control" id="inputName" placeholder="Nome completo*" />
+            </div>
+            <!-- E-mail -->
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="E-mail*" />
+            </div>
+            <!-- Phone -->
+            <div class="form-group">
+              <input type="text" name="phone" class="form-control" id="inputPhone" placeholder="Telefone*" />
+            </div>
+            <!-- subject -->
+            <div class="form-group">
+              <select class="form-control" id="select" name="subject">
+                <option>Assunto 1</option>
+                <option>Assunto 2</option>
+                <option>Assunto 3</option>
+                <option>Assunto 4</option>
+                <option>Assunto 5</option>
+              </select>
+            </div>
+            <!-- Mesage -->
+            <div class="form-group">
+              <textarea class="form-control" name="text" id="msgContact" rows="4" placeholder="Mensagem*"></textarea>
+            </div>
+            <div class="containerBtn">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="divider"></div>
+
+  <div class="footer">
+    <div class="logo">
+      <img src="./images/logosRodape.jpg">
+    </div>
+    <div class="text">
+      <p>A cada realização, um novo aprendizado. A Realibrás/Conspar é como uma grande família. Funcionários, clientes,
+        investidores e parceiros. Buscam manter e construir essa relação de tal forma que perdure durante toda a
+        história. Empresas sempre atentas às últimas inovações do mercado. São 18 anos de know-how para planejar,
+        desenvolver, construir e administrar loteamentos residenciais, comerciais, industriais e empresariais. Estão
+        presentes nas principais cidades da região metropolitana e do interior de São Paulo. Possuem produtos
+        residenciais, comerciais, empresariais e industriais. Mais de 40 empreendimentos lançados, mais de 12.000
+        unidades vendidas e mais de 4 milhões de m² de urbanização.</p>
+    </div>
+  </div>
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-modal-video.min.js"></script>
+
+  <!-- Slick Carousel -->
+  <script src="./js/slick.min.js"></script>
+
+  <!-- Google Map JS -->
+  <script type='text/javascript' src='js/map.js'> </script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPL0asTBRlp1U1f8P426Wohs21uuYgFow&callback=initMap" adiamento
+    assíncrono> </script>
+
+  <!-- JavaScript (Opcional) -->
+  <script src="./js/script.js"></script>
+
+  <!-- Modal Video -->
+  <script>
+    $(".video-play").modalVideo();
+  </script>
+</body>
+
+</html>

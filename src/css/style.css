@@ -1,0 +1,1426 @@
+/* Reset */
+* {
+  font-family: 'Montserrat-Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  position: relative; }
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin-bottom: 0px; }
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Semibold';
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Product-Sans-Regular';
+  src: url("../fonts/product-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Product-Sans-Bold';
+  src: url("../fonts/product-sans-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  content: "";
+  display: block;
+  background-size: cover;
+  mask-size: cover;
+  display: inline-block;
+  height: 30px;
+  width: 30px; }
+
+.icon-arrowWhite {
+  background-image: url("../images/icons/icone-seta.svg"); }
+
+.icon-water {
+  background-image: url("../images/icons/icone-agua.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-asphalt {
+  background-image: url("../images/icons/icone-asfalto.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-land {
+  background-image: url("../images/icons/icone-terreno.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-electricity {
+  background-image: url("../images/icons/icone-iluminacao.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-infrastructure {
+  background-image: url("../images/icons/icone-infraestrutura.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-financing {
+  background-image: url("../images/icons/icone-financiamento.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-info {
+  background-image: url("../images/icons/icone-info.svg");
+  width: 25px;
+  height: 25px; }
+
+.icon-next {
+  background-image: url("../images/icons/icone-setaYellow.svg");
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg); }
+
+.icon-prev {
+  background-image: url("../images/icons/icone-setaYellow.svg");
+  width: 20px;
+  height: 20px; }
+
+.icon-nextCircle {
+  background-image: url("../images/icons/icone-seta-circulo.svg");
+  transform: rotate(180deg); }
+
+.icon-prevCircle {
+  background-image: url("../images/icons/icone-seta-circulo.svg"); }
+
+.icon-pin {
+  background-image: url("../images/icons/icone-pin.svg");
+  width: 30px;
+  height: 30px; }
+
+.icon-buyLand {
+  background-image: url("../images/icons/icone-compre-terreno.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-chooseProject {
+  background-image: url("../images/icons/icone-escolha-projeto.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-financingLand {
+  background-image: url("../images/icons/icone-financie-lote.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-startBuild {
+  background-image: url("../images/icons/icone-comece-construir.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-project {
+  background-image: url("../images/icons/icone-projeto.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-augmentedReality {
+  background-image: url("../images/icons/icone-realidade.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-club {
+  background-image: url("../images/icons/icone-clube.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-facilityFinancing {
+  background-image: url("../images/icons/icone-financiamento-facilitado.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-playStore {
+  background-image: url("../images/icons/icone-playstore.svg");
+  width: 35px;
+  height: 35px; }
+
+.icon-appStore {
+  background-image: url("../images/icons/icone-appstore.svg");
+  width: 35px;
+  height: 35px; }
+
+.container {
+  padding: 10px 10px; }
+
+.navbar {
+  background-color: #fff; }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+
+.navbar-light .navbar-toggler {
+  border-color: transparent; }
+
+.navbar-brand {
+  width: 50%;
+  padding: 0px;
+  margin: 0px; }
+  .navbar-brand img {
+    width: 100%;
+    height: 70px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #1b1b1b;
+  font-weight: bold; }
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 2rem; }
+  .navbar-brand {
+    width: 50%; }
+    .navbar-brand img {
+      width: 33%;
+      height: 80px; } }
+
+.carousel {
+  height: 200px; }
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 50px; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; }
+
+.carousel-item img {
+  height: 200px;
+  object-fit: cover; }
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 330px; }
+  .carousel-item img {
+    height: 330px; } }
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    height: 400px; }
+  .carousel-item img {
+    height: 400px; } }
+
+@media screen and (min-width: 1440px) {
+  .carousel {
+    height: 500px; }
+  .carousel-item img {
+    height: 500px; } }
+
+.videoBanner {
+  background-image: url("../images/bgVideo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 500px; }
+  .videoBanner .containerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto; }
+    .videoBanner .containerContent .videoBannerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .videoBanner .containerContent .videoBannerContainer .title {
+        font-size: 26px;
+        text-align: center;
+        line-height: 30px;
+        font-family: "Product-Sans-Bold", sans-serif;
+        font-weight: 600;
+        margin-top: 100px;
+        padding: 0px 10px; }
+      .videoBanner .containerContent .videoBannerContainer .text {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Product-Sans-Regular", sans-serif;
+        padding: 0px 10px; }
+      .videoBanner .containerContent .videoBannerContainer .video-play .icon-play {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        border-radius: 50px;
+        box-shadow: 0px 8px 18px #00000050; }
+        .videoBanner .containerContent .videoBannerContainer .video-play .icon-play:hover {
+          box-shadow: 0px 8px 18px #00000091; }
+    .videoBanner .containerContent .meetNewHouse {
+      width: 280px;
+      height: 68px;
+      background-color: #000000;
+      text-align: center;
+      position: relative;
+      top: 90px;
+      left: 0px; }
+      .videoBanner .containerContent .meetNewHouse .meetNewHouseButton {
+        font-family: "Montserrat-SemiBold";
+        font-size: 15px;
+        width: 100%;
+        padding: 13px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none; }
+        .videoBanner .containerContent .meetNewHouse .meetNewHouseButton .icon-arrowWhite {
+          width: 15px;
+          height: 15px;
+          transform: rotate(270deg);
+          margin-left: 10px; }
+
+@media screen and (min-width: 768px) {
+  .videoBanner .containerContent {
+    height: 500px;
+    max-width: 750px; }
+    .videoBanner .containerContent .videoBannerContainer {
+      max-width: 930px; }
+      .videoBanner .containerContent .videoBannerContainer .title {
+        font-size: 30px; }
+      .videoBanner .containerContent .videoBannerContainer .text {
+        font-size: 30px; }
+    .videoBanner .containerContent .meetNewHouse {
+      top: 93px; } }
+
+@media screen and (min-width: 1024px) {
+  .videoBanner .containerContent {
+    max-width: 1024px; } }
+
+.info {
+  max-width: 975px;
+  margin: auto;
+  padding: 50px 10px 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "vilaPorto vilaPorto" "water eletricity" "asphaltGuides infrastructure" "land financing" "detailedPlan detailedPlan"; }
+  .info .vilaPortoLogo {
+    grid-area: vilaPorto;
+    width: 200px;
+    height: 140px;
+    margin: auto; }
+    .info .vilaPortoLogo .imgBox {
+      background-image: url("../images/logoEmpreendimento.jpg");
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      background-repeat: no-repeat; }
+  .info .waterAndSewage {
+    grid-area: water;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .info .waterAndSewage p {
+      font-size: 14px;
+      line-height: 22px; }
+  .info .asphaltGuidesAndGutters {
+    grid-area: asphaltGuides;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .info .asphaltGuidesAndGutters p {
+      font-size: 14px;
+      line-height: 22px; }
+  .info .land {
+    grid-area: land;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .info .land p {
+      font-size: 14px;
+      line-height: 22px; }
+  .info .electricityAndlighting {
+    grid-area: eletricity;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+    .info .electricityAndlighting p {
+      font-size: 14px;
+      line-height: 22px; }
+  .info .completeInfrastructure {
+    grid-area: infrastructure;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .info .completeInfrastructure p {
+      font-size: 14px;
+      line-height: 22px; }
+  .info .facilitatedFinancing {
+    grid-area: financing;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .info .facilitatedFinancing p {
+      font-size: 14px;
+      line-height: 22px; }
+  .info .detailedPlan {
+    grid-area: detailedPlan;
+    height: 300px;
+    margin: auto;
+    max-height: 370px; }
+    .info .detailedPlan p {
+      font-size: 14px;
+      line-height: 22px; }
+    .info .detailedPlan .imgDetailedPlan {
+      width: 95%;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      margin: auto;
+      height: 300px;
+      max-height: 300px; }
+      .info .detailedPlan .imgDetailedPlan img {
+        width: 100%;
+        margin-top: 20px;
+        max-height: 300px; }
+    .info .detailedPlan .modal {
+      padding-right: 0px !important; }
+    .info .detailedPlan .modal-body {
+      min-height: 285px;
+      max-height: 380px; }
+      .info .detailedPlan .modal-body .imgPlan {
+        width: 95%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        margin: auto; }
+        .info .detailedPlan .modal-body .imgPlan img {
+          width: 100%; }
+    .info .detailedPlan .modal-dialog {
+      max-width: 420px;
+      margin: 50px auto; }
+
+@media screen and (min-width: 768px) {
+  .info {
+    padding: 50px 30px 20px;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto" "water detailedPlan detailedPlan detailedPlan detailedPlan eletricity" "asphaltGuides detailedPlan detailedPlan detailedPlan detailedPlan infrastructure" "land detailedPlan detailedPlan detailedPlan detailedPlan financing"; }
+    .info .detailedPlan {
+      margin: auto;
+      max-width: 354px; }
+      .info .detailedPlan .imgDetailedPlan {
+        margin-top: 0px;
+        max-height: 354px; }
+        .info .detailedPlan .imgDetailedPlan img {
+          margin-top: 0px; }
+      .info .detailedPlan .modal-body {
+        min-height: 565px; }
+        .info .detailedPlan .modal-body .imgPlan {
+          width: 75%;
+          margin: auto; }
+          .info .detailedPlan .modal-body .imgPlan img {
+            width: 100%; }
+      .info .detailedPlan .modal-dialog {
+        max-width: 710px; } }
+
+@media screen and (min-width: 1024px) {
+  .info .waterAndSewage {
+    grid-area: water;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .info .waterAndSewage p {
+      font-size: 16px; }
+  .info .asphaltGuidesAndGutters p {
+    font-size: 16px; }
+  .info .land p {
+    font-size: 16px; }
+  .info .electricityAndlighting p {
+    font-size: 16px; }
+  .info .completeInfrastructure p {
+    font-size: 16px; }
+  .info .facilitatedFinancing p {
+    font-size: 16px; }
+  .info .detailedPlan {
+    margin: auto;
+    height: 354px;
+    max-width: 354px; }
+    .info .detailedPlan .imgDetailedPlan {
+      width: 100%;
+      margin: auto; }
+      .info .detailedPlan .imgDetailedPlan img {
+        max-height: 354px; }
+    .info .detailedPlan .modal-body {
+      min-height: 610px; }
+      .info .detailedPlan .modal-body .imgPlan {
+        width: 75%;
+        margin: auto; }
+        .info .detailedPlan .modal-body .imgPlan img {
+          width: 100%; }
+    .info .detailedPlan .modal-dialog {
+      max-width: 830px; } }
+
+.statusType {
+  display: flex;
+  flex-direction: column;
+  max-width: 223px;
+  margin: auto; }
+  .statusType .statusTypeContainer .title {
+    color: #ffc700;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: start; }
+  .statusType .statusTypeContainer .buttonBox {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .statusType .statusTypeContainer .buttonBox .statusTypeButton {
+      width: 225px;
+      height: 45px;
+      border: #aaaaaa 1px solid;
+      border-left: #ffc700 8px solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0px; }
+      .statusType .statusTypeContainer .buttonBox .statusTypeButton p {
+        margin-left: 10px;
+        font-weight: bold;
+        text-align: start;
+        font-size: 13px; }
+      .statusType .statusTypeContainer .buttonBox .statusTypeButton .icon-info {
+        margin-right: 10px; }
+
+@media screen and (min-width: 768px) {
+  .statusType {
+    max-width: 490px;
+    margin: 30px auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    place-content: space-around; }
+    .statusType .statusTypeContainer {
+      display: flex;
+      flex-direction: column; } }
+
+.page-wrapper {
+  padding: 0px 10px;
+  margin: auto;
+  max-width: 300px; }
+  .page-wrapper .post-slider {
+    position: relative;
+    margin: auto; }
+    .page-wrapper .post-slider .prev {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      cursor: pointer;
+      z-index: 9999999; }
+    .page-wrapper .post-slider .next {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      cursor: pointer;
+      z-index: 9999999; }
+    .page-wrapper .post-slider .post-wrapper {
+      width: 84%;
+      height: 220px;
+      margin: 10px auto;
+      overflow: hidden; }
+      .page-wrapper .post-slider .post-wrapper .post {
+        width: 200px;
+        height: 200px;
+        margin: 10px 10px;
+        display: inline-block; }
+        .page-wrapper .post-slider .post-wrapper .post .slider-image {
+          width: 100%;
+          height: 200px; }
+
+@media screen and (min-width: 768px) {
+  .page-wrapper {
+    max-width: 700px; }
+    .page-wrapper .post-slider .prev {
+      left: 20px; }
+    .page-wrapper .post-slider .next {
+      right: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  .page-wrapper {
+    max-width: 975px; }
+    .page-wrapper .post-slider .prev {
+      left: 30px; }
+    .page-wrapper .post-slider .next {
+      right: 30px; } }
+
+.cardMap {
+  position: relative;
+  top: 55px;
+  width: 300px;
+  height: 75px;
+  z-index: 999;
+  margin: auto;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0rem 2rem 3rem -1rem #212529ad;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cardMap p {
+    margin-left: 5px; }
+  .cardMap::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: #ffc700 3px solid;
+    position: relative;
+    top: 30px;
+    right: -3px;
+    z-index: 9999; }
+
+.mapContainer {
+  height: 100%;
+  margin: 0px;
+  padding: 20px 0px; }
+  .mapContainer .map {
+    height: 400px; }
+
+@media screen and (min-width: 768px) {
+  .mapContainer {
+    height: 100%;
+    margin: 0px;
+    padding: 20px 0px 50px; }
+    .mapContainer .map {
+      height: 500px; } }
+
+.steps {
+  padding: 20px 5px;
+  width: 300px;
+  margin: 0px auto;
+  max-width: 450px; }
+  .steps .text {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat-Medium", sans-serif;
+    line-height: 30px; }
+  .steps .titleContainer {
+    text-align: center;
+    background-color: #fff;
+    height: 100px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto; }
+    .steps .titleContainer .title {
+      margin: auto;
+      line-height: 30px;
+      max-width: 275px;
+      font-family: "Product-Sans-Regular", sans-serif; }
+      .steps .titleContainer .title b {
+        font-family: "Montserrat-Bold", sans-serif; }
+    .steps .titleContainer::after {
+      content: "";
+      background-image: url("../images/icons/icone-quadrado.svg");
+      width: 40px;
+      height: 80px;
+      position: relative;
+      top: -35px;
+      right: -51px;
+      z-index: 9999; }
+  .steps .iconsSteps {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "step1" "step2" "step3" "step4"; }
+    .steps .iconsSteps .step1 {
+      grid-area: step1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 30px; }
+      .steps .iconsSteps .step1 p {
+        margin-top: 15px; }
+    .steps .iconsSteps .step2 {
+      grid-area: step2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 30px; }
+      .steps .iconsSteps .step2 p {
+        margin-top: 15px; }
+    .steps .iconsSteps .step3 {
+      grid-area: step3;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 20px; }
+      .steps .iconsSteps .step3 p {
+        margin-top: 15px; }
+    .steps .iconsSteps .step4 {
+      grid-area: step4;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 30px; }
+      .steps .iconsSteps .step4 p {
+        margin-top: 15px; }
+
+@media screen and (min-width: 768px) {
+  .steps {
+    max-width: 730px;
+    width: 730px;
+    padding: 10px 40px;
+    margin: auto; }
+    .steps .titleContainer {
+      max-width: 450px;
+      flex-direction: row;
+      width: 450px;
+      height: 64px; }
+      .steps .titleContainer .title {
+        max-width: 385px; }
+      .steps .titleContainer::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        right: 60px; }
+    .steps .iconsSteps {
+      position: relative;
+      margin-top: 30px;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr;
+      grid-template-areas: "step1 step2  step3 step4"; }
+      .steps .iconsSteps .step1:after {
+        content: "";
+        background-image: url("../images/icons/linha-separador.svg");
+        display: block;
+        width: 80px;
+        height: 16px;
+        position: absolute;
+        left: 124px;
+        top: 23px;
+        z-index: 4; }
+      .steps .iconsSteps .step2:after {
+        content: "";
+        background-image: url("../images/icons/linha-separador.svg");
+        display: block;
+        width: 80px;
+        height: 16px;
+        position: absolute;
+        left: 295px;
+        top: 104px;
+        transform: rotate(180deg);
+        z-index: 4; }
+      .steps .iconsSteps .step3 {
+        width: 120px; }
+        .steps .iconsSteps .step3:after {
+          content: "";
+          background-image: url("../images/icons/linha-separador.svg");
+          display: block;
+          width: 80px;
+          height: 16px;
+          position: absolute;
+          left: 465px;
+          top: 23px;
+          z-index: 4; } }
+
+.divider {
+  border-bottom: 1px solid #dddddd;
+  width: 80%;
+  margin: 20px auto; }
+
+@media screen and (min-width: 768px) {
+  .divider {
+    width: 700px;
+    margin: 20px auto; } }
+
+@media screen and (min-width: 1024px) {
+  .divider {
+    width: 910px;
+    margin: 20px auto; } }
+
+.benefitCardContainer {
+  max-width: 320px;
+  margin: auto auto 60px; }
+
+.benefitCard {
+  margin-top: 40px;
+  padding: 0px 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "infoContent" "cardsVilaPorto" "benefit1" "benefit2" "benefit3" "benefit4"; }
+  .benefitCard .cardsVilaPorto {
+    grid-area: cardsVilaPorto; }
+    .benefitCard .cardsVilaPorto img {
+      object-fit: cover;
+      background-repeat: no-repeat;
+      width: 100%; }
+  .benefitCard .infoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: infoContent; }
+    .benefitCard .infoContent p {
+      text-align: center;
+      font-family: "Montserrat-Medium", sans-serif;
+      line-height: 30px;
+      font-size: 16px; }
+    .benefitCard .infoContent h4 {
+      font-weight: bold;
+      text-align: center;
+      font-family: "Product-Sans-Bold", sans-serif;
+      font-size: 30px; }
+  .benefitCard .benefit1 {
+    grid-area: benefit1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px; }
+    .benefitCard .benefit1 p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif; }
+  .benefitCard .benefit2 {
+    grid-area: benefit2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 18px; }
+    .benefitCard .benefit2 p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif; }
+  .benefitCard .benefit3 {
+    grid-area: benefit3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px; }
+    .benefitCard .benefit3 p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif; }
+  .benefitCard .benefit4 {
+    grid-area: benefit4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px; }
+    .benefitCard .benefit4 p {
+      margin-top: 15px;
+      font-family: "Montserrat-Medium", sans-serif; }
+
+@media screen and (min-width: 768px) {
+  .benefitCardContainer {
+    max-width: 768px; }
+  .benefitCard {
+    padding: 0px 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cardsVilaPorto cardsVilaPorto infoContent infoContent" "benefit1 benefit2 benefit3 benefit4"; }
+    .benefitCard .infoContent {
+      padding: 0px 20px; }
+      .benefitCard .infoContent p {
+        text-align: start; }
+      .benefitCard .infoContent h4 {
+        text-align: start; }
+    .benefitCard .benefit2 {
+      margin: 20px 5px; } }
+
+@media screen and (min-width: 1024px) {
+  .benefitCard {
+    max-width: 910px;
+    grid-gap: 20px; }
+    .benefitCard .cardsVilaPorto img {
+      width: 90%; }
+    .benefitCard .infoContent {
+      padding-left: 25px; } }
+
+.carouselQRCode {
+  width: 300px;
+  margin: 30px auto;
+  max-width: 450px; }
+  .carouselQRCode .titleContainer {
+    text-align: center;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto; }
+    .carouselQRCode .titleContainer .title {
+      margin: auto;
+      line-height: 30px;
+      max-width: 280px;
+      margin-bottom: 24px;
+      width: 280px;
+      height: 46px; }
+    .carouselQRCode .titleContainer::after {
+      content: "";
+      background-image: url(../images/icons/icone-quadrado.svg);
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -146px;
+      right: 84px;
+      z-index: 9999; }
+    .carouselQRCode .titleContainer .subTitle {
+      font-weight: bold;
+      font-size: 27px;
+      margin: auto;
+      line-height: 30px;
+      max-width: 275px;
+      margin-top: 10px; }
+
+@media screen and (min-width: 768px) {
+  .carouselQRCode {
+    width: 700px;
+    margin: 30px auto;
+    max-width: 700px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    height: 97px; }
+    .carouselQRCode .titleContainer {
+      text-align: center;
+      width: 700px;
+      /* align-content: space-between;*/ }
+      .carouselQRCode .titleContainer .title {
+        max-width: 700px;
+        width: 700px;
+        font-family: "Product-Sans-Regular", sans-serif;
+        margin-bottom: 0px;
+        line-height: 38px;
+        font-size: 30px; }
+      .carouselQRCode .titleContainer::after {
+        top: -77px;
+        right: 243px; }
+      .carouselQRCode .titleContainer .subTitle {
+        line-height: 30px;
+        max-width: 700px;
+        margin-top: 0px;
+        font-family: "Product-Sans-Regular", sans-serif;
+        font-size: 30px; } }
+
+.page-wrapper2 {
+  display: grid;
+  height: 620px; }
+  .page-wrapper2::after {
+    content: "";
+    background-color: #f6df80;
+    width: 100%;
+    height: 400px;
+    z-index: -9999;
+    position: relative;
+    top: -334px;
+    left: 0px; }
+  .page-wrapper2 .post-slider2 {
+    max-width: 300px;
+    margin: auto;
+    position: relative; }
+    .page-wrapper2 .post-slider2 .prev2 {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      cursor: pointer; }
+    .page-wrapper2 .post-slider2 .next2 {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      cursor: pointer; }
+    .page-wrapper2 .post-slider2 .icon-prevCircle {
+      width: 25px;
+      height: 25px; }
+    .page-wrapper2 .post-slider2 .icon-nextCircle {
+      width: 25px;
+      height: 25px; }
+    .page-wrapper2 .post-slider2 .post-wrapper2 {
+      width: 84%;
+      height: 534px;
+      margin: 10px auto;
+      overflow: hidden; }
+      .page-wrapper2 .post-slider2 .post-wrapper2 .post {
+        width: 234px !important;
+        height: 513px;
+        margin: 10px 9px;
+        display: inline-block; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post .slider-image {
+          width: 100%;
+          height: 200px; }
+      .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "titleCard titleCard" "description1 descriptionValue1" "description2 descriptionValue2" "description3 descriptionValue3" "description4 descriptionValue4" "qrCode qrCodeInstructions";
+        width: 235px;
+        margin: auto;
+        padding-bottom: 25px;
+        background-color: #fff; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .titleCard {
+          grid-area: titleCard;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          height: 45px;
+          margin-left: 15px;
+          margin-top: 14px; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .titleCard p {
+            font-family: "Product-Sans-Bold", sans-serif;
+            font-size: 20px; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description1 {
+          grid-area: description1;
+          line-height: 16px;
+          font-size: 14px;
+          margin-left: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description1 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue1 {
+          grid-area: descriptionValue1;
+          text-align: end;
+          line-height: 16px;
+          font-size: 14px;
+          margin-right: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue1 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description2 {
+          grid-area: description2;
+          line-height: 16px;
+          font-size: 14px;
+          margin-left: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description2 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue2 {
+          grid-area: descriptionValue2;
+          text-align: end;
+          line-height: 16px;
+          font-size: 14px;
+          margin-right: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue2 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description3 {
+          grid-area: description3;
+          line-height: 16px;
+          font-size: 14px;
+          margin-left: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description3 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue3 {
+          grid-area: descriptionValue3;
+          text-align: end;
+          line-height: 16px;
+          font-size: 14px;
+          margin-right: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue3 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description4 {
+          grid-area: description4;
+          line-height: 16px;
+          font-size: 14px;
+          margin-left: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .description4 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue4 {
+          grid-area: descriptionValue4;
+          text-align: end;
+          line-height: 16px;
+          font-size: 14px;
+          margin-right: 15px;
+          font-weight: bold; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .descriptionValue4 p {
+            font-family: "Montserrat-Semibold", sans-serif; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .qrCode {
+          grid-area: qrCode;
+          margin-left: 15px; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .qrCode img {
+            width: 100%; }
+        .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .qrCodeInstructions {
+          grid-area: qrCodeInstructions;
+          line-height: 16px;
+          font-size: 10px;
+          margin-right: 10px; }
+          .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .qrCodeInstructions p {
+            font-family: "Montserrat-Medium", sans-serif; }
+            .page-wrapper2 .post-slider2 .post-wrapper2 .post-info .infoCardQRCode .qrCodeInstructions p a {
+              font-weight: bold;
+              color: black; }
+
+@media screen and (min-width: 768px) {
+  .page-wrapper2 .post-slider2 {
+    max-width: 599px; }
+    .page-wrapper2 .post-slider2 .icon-nextCircle {
+      width: 30px;
+      height: 30px; }
+    .page-wrapper2 .post-slider2 .icon-prevCircle {
+      width: 30px;
+      height: 30px; }
+    .page-wrapper2 .post-slider2 .prev2 {
+      left: 20px; }
+    .page-wrapper2 .post-slider2 .next2 {
+      right: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  .page-wrapper2 .post-slider2 {
+    max-width: 894px; }
+    .page-wrapper2 .post-slider2 .prev2 {
+      left: 30px; }
+    .page-wrapper2 .post-slider2 .next2 {
+      right: 30px; } }
+
+@media screen and (min-width: 1440px) {
+  .page-wrapper2 .post-slider2 .prev2 {
+    left: 25px; }
+  .page-wrapper2 .post-slider2 .next2 {
+    right: 25px; } }
+
+.app {
+  max-width: 300px;
+  width: 300px;
+  margin: auto;
+  padding: 50px 0px 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "appInfo" "appButtons" "phoneImg"; }
+  .app .appInfo {
+    grid-area: appInfo;
+    padding: 25px;
+    margin: auto; }
+    .app .appInfo .title {
+      margin-bottom: 10px;
+      font-size: 25px;
+      font-family: "Product-Sans-Regular", sans-serif; }
+      .app .appInfo .title b {
+        font-family: "Product-Sans-Bold", sans-serif;
+        font-weight: 600; }
+    .app .appInfo .text {
+      font-size: 16px;
+      font-family: "Montserrat-Medium", sans-serif; }
+  .app .appButtons {
+    grid-area: appButtons;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .app .appButtons .playStore {
+      width: 280px;
+      background-color: #79BD31;
+      padding: 5px; }
+      .app .appButtons .playStore .btnPlayStore {
+        display: flex;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center; }
+        .app .appButtons .playStore .btnPlayStore p {
+          margin-left: 10px; }
+    .app .appButtons .appStore {
+      width: 280px;
+      background-color: #679edc;
+      padding: 5px; }
+      .app .appButtons .appStore .btnAppStore {
+        display: flex;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center; }
+        .app .appButtons .appStore .btnAppStore p {
+          margin-left: 10px; }
+  .app .phoneImg {
+    grid-area: phoneImg;
+    margin: auto; }
+    .app .phoneImg img {
+      width: 300px; }
+
+@media screen and (min-width: 768px) {
+  .app {
+    max-width: 750px;
+    width: 750px;
+    margin: auto;
+    padding: 50px 0px 50px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "phoneImg appInfo" "phoneImg appButtons"; }
+    .app .appInfo {
+      padding: 0px;
+      margin-right: 50px; }
+      .app .appInfo .title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 15px; }
+      .app .appInfo .text {
+        line-height: 30px; }
+    .app .appButtons {
+      align-items: start; }
+      .app .appButtons .playStore {
+        width: 230px; }
+        .app .appButtons .playStore p {
+          font-family: 'Montserrat-Medium';
+          font-size: 14px; }
+      .app .appButtons .appStore {
+        width: 230px;
+        font-family: 'Montserrat-Medium';
+        font-size: 14px; } }
+
+@media screen and (min-width: 1024px) {
+  .app {
+    max-width: 910px;
+    width: 910px; }
+    .app .phoneImg img {
+      width: 100%; }
+    .app .appInfo {
+      padding: 0px;
+      margin: 115px 30px 0px 0px; }
+      .app .appInfo .title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 15px; }
+      .app .appInfo .text {
+        line-height: 30px; }
+    .app .appButtons {
+      align-items: start;
+      height: 225px;
+      justify-content: start; }
+      .app .appButtons .playStore {
+        box-shadow: rgba(45, 45, 45, 0.15);
+        margin-bottom: 15px; }
+      .app .appButtons .appStore {
+        margin-bottom: 15px;
+        box-shadow: rgba(45, 45, 45, 0.15); } }
+
+.virtualTour img {
+  width: 100%; }
+
+.contactForm {
+  max-width: 300px;
+  width: 300px;
+  height: 5900px;
+  max-height: 590px;
+  margin: auto;
+  padding: 0px 0px 20px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "messageContactForm" "bootstrapContactForm"; }
+  .contactForm .messageContactForm {
+    grid-area: messageContactForm;
+    font-size: 30px;
+    padding: 15px 24px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 34px;
+    margin-bottom: 10px; }
+    .contactForm .messageContactForm p {
+      font-family: "Product-Sans-Regular", sans-serif; }
+      .contactForm .messageContactForm p b {
+        font-family: "Product-Sans-Bold", sans-serif; }
+  .contactForm .bootstrapContactForm {
+    grid-area: bootstrapContactForm; }
+    .contactForm .bootstrapContactForm #contact {
+      margin-top: 0px; }
+    .contactForm .bootstrapContactForm .contact .container {
+      padding: 0px 5px 10px; }
+    .contactForm .bootstrapContactForm .contact p {
+      margin-top: 50px; }
+    .contactForm .bootstrapContactForm .form-contact {
+      width: 87%;
+      margin: 0 auto; }
+      .contactForm .bootstrapContactForm .form-contact .form-group {
+        width: 252px;
+        margin-bottom: 10px; }
+    .contactForm .bootstrapContactForm .form-control {
+      font-weight: bold;
+      border: 1px solid #dddddd;
+      border-radius: 0px;
+      font-size: 16px;
+      font-family: "Montserrat-Regular",sans-serif; }
+    .contactForm .bootstrapContactForm span.error {
+      font-size: 12px;
+      font-weight: bold;
+      color: red; }
+    .contactForm .bootstrapContactForm textarea {
+      resize: none; }
+    .contactForm .bootstrapContactForm .containerBtn {
+      display: flex;
+      justify-content: center; }
+      .contactForm .bootstrapContactForm .containerBtn .btn-primary {
+        background-color: #000000;
+        border-color: black;
+        font-weight: bold;
+        border-radius: 0px;
+        width: 100%; }
+        .contactForm .bootstrapContactForm .containerBtn .btn-primary:hover {
+          background-color: #ffc700;
+          color: #000000;
+          border-color: #ffc700; }
+    .contactForm .bootstrapContactForm input.error,
+    .contactForm .bootstrapContactForm textarea.error {
+      border-color: red; }
+
+@media screen and (min-width: 768px) {
+  .contactForm {
+    max-width: 700px;
+    width: 700px;
+    height: 445px;
+    max-height: 445px;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "messageContactForm bootstrapContactForm"; }
+    .contactForm .messageContactForm {
+      font-size: 25px;
+      padding: 75px 15px 15px;
+      align-items: flex-start; }
+    .contactForm .bootstrapContactForm .form-contact {
+      width: 100%; }
+      .contactForm .bootstrapContactForm .form-contact .form-group {
+        width: 100%; }
+      .contactForm .bootstrapContactForm .form-contact .btn-primary {
+        width: 40%; } }
+
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .contactForm {
+    width: 910px;
+    max-width: 910px;
+    grid-gap: 90px; }
+    .contactForm .messageContactForm {
+      padding: 75px 65px 15px 15px; } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 300px;
+  margin: auto; }
+  .footer .logo {
+    padding: 20px;
+    margin: auto;
+    text-align: center; }
+    .footer .logo img {
+      width: 90%; }
+  .footer .text {
+    padding: 0px 20px 20px;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 10px;
+    margin: auto; }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    max-width: 700px;
+    width: 700px; }
+    .footer .logo img {
+      width: 90%; }
+    .footer .text {
+      max-width: 50%;
+      padding: 0px 10px 10px; } }
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    max-width: 1000px;
+    width: 1000px; }
+    .footer .logo img {
+      width: 100%; }
+    .footer .text {
+      max-width: 50%;
+      padding: 0px 10px 10px; } }

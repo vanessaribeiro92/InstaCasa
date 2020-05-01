@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Semibold';
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Product-Sans-Regular';
+  src: url("../fonts/product-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Product-Sans-Bold';
+  src: url("../fonts/product-sans-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  content: "";
+  display: block;
+  background-size: cover;
+  mask-size: cover;
+  display: inline-block;
+  height: 30px;
+  width: 30px; }
+
+.icon-arrowWhite {
+  background-image: url("../images/icons/icone-seta.svg"); }
+
+.icon-water {
+  background-image: url("../images/icons/icone-agua.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-asphalt {
+  background-image: url("../images/icons/icone-asfalto.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-land {
+  background-image: url("../images/icons/icone-terreno.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-electricity {
+  background-image: url("../images/icons/icone-iluminacao.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-infrastructure {
+  background-image: url("../images/icons/icone-infraestrutura.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-financing {
+  background-image: url("../images/icons/icone-financiamento.svg");
+  height: 90px;
+  width: 90px; }
+
+.icon-info {
+  background-image: url("../images/icons/icone-info.svg");
+  width: 25px;
+  height: 25px; }
+
+.icon-next {
+  background-image: url("../images/icons/icone-setaYellow.svg");
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg); }
+
+.icon-prev {
+  background-image: url("../images/icons/icone-setaYellow.svg");
+  width: 20px;
+  height: 20px; }
+
+.icon-nextCircle {
+  background-image: url("../images/icons/icone-seta-circulo.svg");
+  transform: rotate(180deg); }
+
+.icon-prevCircle {
+  background-image: url("../images/icons/icone-seta-circulo.svg"); }
+
+.icon-pin {
+  background-image: url("../images/icons/icone-pin.svg");
+  width: 30px;
+  height: 30px; }
+
+.icon-buyLand {
+  background-image: url("../images/icons/icone-compre-terreno.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-chooseProject {
+  background-image: url("../images/icons/icone-escolha-projeto.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-financingLand {
+  background-image: url("../images/icons/icone-financie-lote.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-startBuild {
+  background-image: url("../images/icons/icone-comece-construir.svg");
+  width: 100px;
+  height: 100px; }
+
+.icon-project {
+  background-image: url("../images/icons/icone-projeto.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-augmentedReality {
+  background-image: url("../images/icons/icone-realidade.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-club {
+  background-image: url("../images/icons/icone-clube.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-facilityFinancing {
+  background-image: url("../images/icons/icone-financiamento-facilitado.svg");
+  width: 120px;
+  height: 75px; }
+
+.icon-playStore {
+  background-image: url("../images/icons/icone-playstore.svg");
+  width: 35px;
+  height: 35px; }
+
+.icon-appStore {
+  background-image: url("../images/icons/icone-appstore.svg");
+  width: 35px;
+  height: 35px; }
