@@ -138,23 +138,23 @@ p {
 
 .icon-buyLand {
   background-image: url("../images/icons/icone-compre-terreno.svg");
-  width: 100px;
-  height: 100px; }
+  width: 90px;
+  height: 90px; }
 
 .icon-chooseProject {
   background-image: url("../images/icons/icone-escolha-projeto.svg");
-  width: 100px;
-  height: 100px; }
+  width: 90px;
+  height: 90px; }
 
 .icon-financingLand {
   background-image: url("../images/icons/icone-financie-lote.svg");
-  width: 100px;
-  height: 100px; }
+  width: 90px;
+  height: 90px; }
 
 .icon-startBuild {
   background-image: url("../images/icons/icone-comece-construir.svg");
-  width: 100px;
-  height: 100px; }
+  width: 90px;
+  height: 90px; }
 
 .icon-project {
   background-image: url("../images/icons/icone-projeto.svg");
@@ -254,6 +254,12 @@ p {
     height: 500px; }
   .carousel-item img {
     height: 500px; } }
+
+@media screen and (min-width: 1570px) {
+  .carousel {
+    height: 100%; }
+  .carousel-item img {
+    height: 100%; } }
 
 .videoBanner {
   background-image: url("../images/bgVideo.jpg");
@@ -369,7 +375,8 @@ p {
     text-align: center; }
     .info .waterAndSewage p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
   .info .asphaltGuidesAndGutters {
     grid-area: asphaltGuides;
     display: flex;
@@ -379,7 +386,8 @@ p {
     text-align: center; }
     .info .asphaltGuidesAndGutters p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
   .info .land {
     grid-area: land;
     display: flex;
@@ -389,7 +397,8 @@ p {
     text-align: center; }
     .info .land p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
   .info .electricityAndlighting {
     grid-area: eletricity;
     display: flex;
@@ -400,7 +409,8 @@ p {
     margin-top: 20px; }
     .info .electricityAndlighting p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
   .info .completeInfrastructure {
     grid-area: infrastructure;
     display: flex;
@@ -410,7 +420,8 @@ p {
     text-align: center; }
     .info .completeInfrastructure p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
   .info .facilitatedFinancing {
     grid-area: financing;
     display: flex;
@@ -420,7 +431,8 @@ p {
     text-align: center; }
     .info .facilitatedFinancing p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
   .info .detailedPlan {
     grid-area: detailedPlan;
     height: 300px;
@@ -428,7 +440,8 @@ p {
     max-height: 370px; }
     .info .detailedPlan p {
       font-size: 14px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif; }
     .info .detailedPlan .imgDetailedPlan {
       width: 95%;
       object-fit: cover;
@@ -693,10 +706,9 @@ p {
   .steps .iconsSteps {
     margin-top: 30px;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "step1" "step2" "step3" "step4"; }
+    grid-template-areas: "step1 step2" "step3 step4"; }
     .steps .iconsSteps .step1 {
       grid-area: step1;
       display: flex;
@@ -704,9 +716,11 @@ p {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 20px 30px; }
+      margin: 20px 20px; }
       .steps .iconsSteps .step1 p {
-        margin-top: 15px; }
+        margin-top: 15px;
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px; }
     .steps .iconsSteps .step2 {
       grid-area: step2;
       display: flex;
@@ -714,9 +728,11 @@ p {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 20px 30px; }
+      margin: 20px 20px; }
       .steps .iconsSteps .step2 p {
-        margin-top: 15px; }
+        margin-top: 15px;
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px; }
     .steps .iconsSteps .step3 {
       grid-area: step3;
       display: flex;
@@ -726,7 +742,9 @@ p {
       text-align: center;
       margin: 20px 20px; }
       .steps .iconsSteps .step3 p {
-        margin-top: 15px; }
+        margin-top: 15px;
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px; }
     .steps .iconsSteps .step4 {
       grid-area: step4;
       display: flex;
@@ -734,9 +752,11 @@ p {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 20px 30px; }
+      margin: 20px 20px 40px; }
       .steps .iconsSteps .step4 p {
-        margin-top: 15px; }
+        margin-top: 15px;
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px; }
 
 @media screen and (min-width: 768px) {
   .steps {
@@ -745,18 +765,19 @@ p {
     padding: 10px 40px;
     margin: auto; }
     .steps .titleContainer {
-      max-width: 450px;
+      max-width: 520px;
       flex-direction: row;
-      width: 450px;
+      width: 520px;
       height: 64px; }
       .steps .titleContainer .title {
-        max-width: 385px; }
+        font-size: 30px;
+        max-width: 566px; }
       .steps .titleContainer::after {
         content: "";
         width: 50px;
         height: 50px;
         top: 0px;
-        right: 60px; }
+        right: 59px; }
     .steps .iconsSteps {
       position: relative;
       margin-top: 30px;
@@ -772,8 +793,8 @@ p {
         width: 80px;
         height: 16px;
         position: absolute;
-        left: 124px;
-        top: 23px;
+        left: 117px;
+        top: 32px;
         z-index: 4; }
       .steps .iconsSteps .step2:after {
         content: "";
@@ -782,8 +803,8 @@ p {
         width: 80px;
         height: 16px;
         position: absolute;
-        left: 295px;
-        top: 104px;
+        left: 283px;
+        top: 99px;
         transform: rotate(180deg);
         z-index: 4; }
       .steps .iconsSteps .step3 {
@@ -795,8 +816,8 @@ p {
           width: 80px;
           height: 16px;
           position: absolute;
-          left: 465px;
-          top: 23px;
+          left: 447px;
+          top: 32px;
           z-index: 4; } }
 
 .divider {
@@ -822,10 +843,9 @@ p {
   margin-top: 40px;
   padding: 0px 10px;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "infoContent" "cardsVilaPorto" "benefit1" "benefit2" "benefit3" "benefit4"; }
+  grid-template-areas: "infoContent infoContent" "cardsVilaPorto cardsVilaPorto" "benefit1 benefit2" "benefit3 benefit4"; }
   .benefitCard .cardsVilaPorto {
     grid-area: cardsVilaPorto; }
     .benefitCard .cardsVilaPorto img {
@@ -854,10 +874,11 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px; }
+    margin: 20px 10px 40px; }
     .benefitCard .benefit1 p {
       margin-top: 15px;
-      font-family: "Montserrat-Medium", sans-serif; }
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px; }
   .benefitCard .benefit2 {
     grid-area: benefit2;
     display: flex;
@@ -865,10 +886,11 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 18px; }
+    margin: 20px 10px; }
     .benefitCard .benefit2 p {
       margin-top: 15px;
-      font-family: "Montserrat-Medium", sans-serif; }
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px; }
   .benefitCard .benefit3 {
     grid-area: benefit3;
     display: flex;
@@ -876,10 +898,11 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px; }
+    margin: 20px 10px; }
     .benefitCard .benefit3 p {
       margin-top: 15px;
-      font-family: "Montserrat-Medium", sans-serif; }
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px; }
   .benefitCard .benefit4 {
     grid-area: benefit4;
     display: flex;
@@ -887,10 +910,11 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px; }
+    margin: 20px 10px; }
     .benefitCard .benefit4 p {
       margin-top: 15px;
-      font-family: "Montserrat-Medium", sans-serif; }
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px; }
 
 @media screen and (min-width: 768px) {
   .benefitCardContainer {
@@ -976,8 +1000,10 @@ p {
         line-height: 38px;
         font-size: 30px; }
       .carouselQRCode .titleContainer::after {
-        top: -77px;
-        right: 243px; }
+        width: 50px;
+        height: 50px;
+        top: -81px;
+        right: 248px; }
       .carouselQRCode .titleContainer .subTitle {
         line-height: 30px;
         max-width: 700px;
@@ -1206,6 +1232,7 @@ p {
         align-items: center;
         justify-content: center; }
         .app .appButtons .playStore .btnPlayStore p {
+          font-family: "Montserrat-Medium", sans-serif;
           margin-left: 10px; }
     .app .appButtons .appStore {
       width: 280px;
@@ -1218,6 +1245,7 @@ p {
         align-items: center;
         justify-content: center; }
         .app .appButtons .appStore .btnAppStore p {
+          font-family: "Montserrat-Medium", sans-serif;
           margin-left: 10px; }
   .app .phoneImg {
     grid-area: phoneImg;

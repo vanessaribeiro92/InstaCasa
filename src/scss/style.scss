@@ -111,7 +111,17 @@
     }
   }
 
-  // @media (min-width)
+  @media (min-width: $desktopLarge) {
+    .carousel {
+      height: 100%;
+    }
+
+    .carousel-item {
+      img {
+        height: 100%;
+      }
+    }
+  }
 }
 
 // videoBanner
@@ -278,6 +288,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
   }
 
@@ -293,6 +304,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
   }
 
@@ -307,6 +319,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
   }
 
@@ -323,6 +336,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
   }
 
@@ -338,6 +352,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
   }
 
@@ -353,6 +368,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
   }
 
@@ -367,6 +383,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
+      font-family: 'Montserrat-SemiBold',sans-serif;
     }
 
     .imgDetailedPlan {
@@ -800,14 +817,12 @@
   .iconsSteps {
     margin-top: 30px;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
+    // grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "step1"
-      "step2"
-      "step3"
-      "step4";
+      "step1 step2"
+      "step3 step4";
 
     .step1 {
       grid-area: step1;
@@ -816,10 +831,11 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 20px 30px;
+      margin: 20px 20px;
       p {
         margin-top: 15px;
-        // font semi bold
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px;
       }
     }
     .step2 {
@@ -829,10 +845,11 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 20px 30px;
+      margin: 20px 20px;
       p {
         margin-top: 15px;
-        // font semi bold
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px;
       }
     }
     .step3 {
@@ -845,7 +862,8 @@
       margin: 20px 20px;
       p {
         margin-top: 15px;
-        // font semi bold
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px;
       }
     }
     .step4 {
@@ -855,11 +873,12 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 20px 30px;
+      margin: 20px 20px 40px;
 
       p {
         margin-top: 15px;
-        // font semi bold
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 15px;
       }
     }
   }
@@ -873,19 +892,21 @@
       padding: 10px 40px;
       margin: auto;
       .titleContainer {
-        max-width: 450px;
+        max-width: 520px;
         flex-direction: row;
-        width: 450px;
+        width: 520px;
         height: 64px;
+        
         .title {
-          max-width: 385px;
+          font-size: 30px;
+          max-width: 566px;
         }
         &::after {
           content: "";
           width: 50px;
           height: 50px;
           top: 0px;
-          right: 60px;
+          right: 59px;
         }
       }
 
@@ -906,8 +927,8 @@
             width: 80px;
             height: 16px;
             position: absolute;
-            left: 124px;
-            top: 23px;
+            left: 117px;
+            top: 32px;
             z-index: 4;
           }
         }
@@ -920,8 +941,8 @@
             width: 80px;
             height: 16px;
             position: absolute;
-            left: 295px;
-            top: 104px;
+            left: 283px;
+            top: 99px;
             transform: rotate(180deg);
             z-index: 4;
           }
@@ -936,8 +957,8 @@
             width: 80px;
             height: 16px;
             position: absolute;
-            left: 465px;
-            top: 23px;
+            left: 447px;
+            top: 32px;
             z-index: 4;
           }
         }
@@ -975,16 +996,14 @@
   margin-top: 40px;
   padding: 0px 10px;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
+  // grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "infoContent"
-    "cardsVilaPorto"
-    "benefit1"
-    "benefit2"
-    "benefit3"
-    "benefit4";
+    "infoContent infoContent"
+    "cardsVilaPorto cardsVilaPorto"
+    "benefit1 benefit2"
+    "benefit3 benefit4";
 
   .cardsVilaPorto {
     grid-area: cardsVilaPorto;
@@ -1021,10 +1040,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px;
+    margin: 20px 10px 40px;
     p {
       margin-top: 15px;
       font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px;
     }
   }
 
@@ -1035,10 +1055,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 18px;
+    margin: 20px 10px;
     p {
       margin-top: 15px;
       font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px;
     }
   }
 
@@ -1049,10 +1070,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px;
+    margin: 20px 10px;
     p {
       margin-top: 15px;
       font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px;
     }
   }
 
@@ -1063,10 +1085,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px;
+    margin: 20px 10px;
     p {
       margin-top: 15px;
       font-family: "Montserrat-Medium", sans-serif;
+      font-size: 15px;
     }
   }
 }
@@ -1195,8 +1218,10 @@
           font-size: 30px;
         }
         &::after {
-          top: -77px;
-          right: 243px;
+          width: 50px;
+          height: 50px;
+          top: -81px;
+          right: 248px;
         }
         .subTitle {
           line-height: 30px;
