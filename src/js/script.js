@@ -110,5 +110,33 @@ form.validate({
     },
 });
 
-
+// Button back to top
     
+$(document).ready(function(){
+  $(window).scroll(function () {
+         if ($(this).scrollTop() > 50) {
+             $('#back-to-top').fadeIn();
+         } else {
+             $('#back-to-top').fadeOut();
+         }
+     });
+     // scroll body to 0px on click
+     $('#back-to-top').click(function () {
+         $('#back-to-top').tooltip('hide');
+         $('body,html').animate({
+             scrollTop: 0
+         }, 200);
+         return false;
+     });
+     
+     $('#back-to-top').tooltip('show');
+
+});
+
+
+// animation
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; 
+// AOS.init(
+//   duration= 1200,
+// );

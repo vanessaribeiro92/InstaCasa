@@ -189,6 +189,41 @@ p {
 .container {
   padding: 10px 10px; }
 
+.back-to-top {
+  content: "";
+  background-image: url("../images/icons/icone-setaYellow.svg");
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 30px;
+  height: 40px;
+  border: 4px solid #ffc700;
+  background-color: transparent;
+  transform: rotate(90deg);
+  border-radius: 0px; }
+
+.btn-primary:focus, .btn-primary.focus {
+  background-color: #f6df80;
+  border-color: #f6df80;
+  box-shadow: 0 0 0 0.2rem #ffc10775; }
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #ffc10763; }
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #f6df80;
+  border-color: #f6df80; }
+
+.btn-primary:hover {
+  content: "";
+  background-image: url("../images/icons/icone-seta.svg");
+  border: 4px solid #ffc700;
+  background-color: #FFB001;
+  border-radius: 0px; }
+
 .navbar {
   background-color: #fff; }
 
@@ -946,7 +981,7 @@ p {
 
 .carouselQRCode {
   width: 300px;
-  margin: 30px auto;
+  margin: auto;
   max-width: 450px; }
   .carouselQRCode .titleContainer {
     text-align: center;
@@ -960,7 +995,7 @@ p {
       margin: auto;
       line-height: 30px;
       max-width: 280px;
-      margin-bottom: 24px;
+      margin-bottom: 10px;
       width: 280px;
       height: 46px; }
     .carouselQRCode .titleContainer::after {
@@ -969,7 +1004,7 @@ p {
       width: 40px;
       height: 40px;
       position: relative;
-      top: -146px;
+      top: -134px;
       right: 84px;
       z-index: 9999; }
     .carouselQRCode .titleContainer .subTitle {
@@ -1201,18 +1236,20 @@ p {
   grid-template-areas: "appInfo" "appButtons" "phoneImg"; }
   .app .appInfo {
     grid-area: appInfo;
-    padding: 25px;
+    padding: 0px 25px 20px;
     margin: auto; }
     .app .appInfo .title {
       margin-bottom: 10px;
       font-size: 25px;
-      font-family: "Product-Sans-Regular", sans-serif; }
+      font-family: "Product-Sans-Regular", sans-serif;
+      line-height: 30px; }
       .app .appInfo .title b {
         font-family: "Product-Sans-Bold", sans-serif;
         font-weight: 600; }
     .app .appInfo .text {
       font-size: 16px;
-      font-family: "Montserrat-Medium", sans-serif; }
+      font-family: "Montserrat-Medium", sans-serif;
+      line-height: 30px; }
   .app .appButtons {
     grid-area: appButtons;
     text-align: center;
@@ -1222,7 +1259,7 @@ p {
     align-items: center;
     justify-content: space-between; }
     .app .appButtons .playStore {
-      width: 280px;
+      width: 250px;
       background-color: #79BD31;
       padding: 5px; }
       .app .appButtons .playStore .btnPlayStore {
@@ -1235,7 +1272,7 @@ p {
           font-family: "Montserrat-Medium", sans-serif;
           margin-left: 10px; }
     .app .appButtons .appStore {
-      width: 280px;
+      width: 250px;
       background-color: #679edc;
       padding: 5px; }
       .app .appButtons .appStore .btnAppStore {
