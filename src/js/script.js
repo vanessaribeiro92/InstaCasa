@@ -27,14 +27,14 @@ $('.post-wrapper').slick({
       }
     },
     {
-      breakpoint: 900,
+      breakpoint: 1023,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
       }
     },
     {
-      breakpoint: 450,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -47,13 +47,20 @@ $('.post-wrapper').slick({
 });
 
 $('.post-wrapper2').slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   // autoplay: true,
   // autoplaySpeed: 2000,
   nextArrow: $('.next2'),
   prevArrow: $('.prev2'),
   responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    },
     {
       breakpoint: 1100,
       settings: {

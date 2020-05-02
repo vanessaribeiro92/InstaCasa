@@ -291,7 +291,7 @@
 
 // Info
 .info {
-  max-width: 975px;
+  max-width: 300px;
   margin: auto;
   padding: 50px 10px 20px;
   display: grid;
@@ -474,6 +474,7 @@
 @media screen {
   @media (min-width: $tablet) {
     .info {
+      max-width: 750px;
       padding: 50px 30px 20px;
       grid-gap: 5px;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -810,6 +811,7 @@
     font-size: 16px;
     font-family: "Montserrat-Medium", sans-serif;
     line-height: 30px;
+    margin-top: -30px;
   }
 
   .titleContainer {
@@ -935,6 +937,11 @@
       width: 730px;
       padding: 10px 40px;
       margin: auto;
+
+      .text { 
+        margin-top: 0px;
+      }
+
       .titleContainer {
         max-width: 520px;
         flex-direction: row;
@@ -1051,6 +1058,7 @@
 
   .cardsVilaPorto {
     grid-area: cardsVilaPorto;
+    margin-top: 20px;
     img {
       object-fit: cover;
       background-repeat: no-repeat;
@@ -1164,6 +1172,11 @@
         }
       }
 
+      .cardsVilaPorto {
+        img {
+          margin-top: 0px;
+        }
+      }
       .benefit2 {
         margin: 20px 5px;
       }
@@ -1213,6 +1226,7 @@
       margin-bottom: 10px;
       width: 280px;
       height: 46px;
+      font-family: 'Product-Sans-Regular',sans-serif;
     }
     &::after {
       content: "";
@@ -1220,8 +1234,8 @@
       width: 40px;
       height: 40px;
       position: relative;
-      top: -134px;
-      right: 84px;
+      top: -102px;
+      right: 120px;
       z-index: 9999;
     }
 
@@ -1232,6 +1246,7 @@
       line-height: 30px;
       max-width: 275px;
       margin-top: 10px;
+      font-family: 'Product-Sans-Bold', sans-serif;
       // margin-bottom: 30px;
     }
   }
@@ -1549,6 +1564,7 @@
   @media (min-width: $desktop) {
     .page-wrapper2 {
       .post-slider2 {
+        max-width: 1200px;
         .prev2 {
           left: 25px;
         }
