@@ -1,3 +1,4 @@
+// video
 $(function() {
   $(".video").click(function () {
     var theModal = $(this).data("target"),
@@ -10,7 +11,7 @@ $(function() {
   });
 });
 
-
+// carousel photo
 $('.post-wrapper').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -46,6 +47,8 @@ $('.post-wrapper').slick({
   ]
 });
 
+
+// carousel QRCode
 $('.post-wrapper2').slick({
   slidesToShow: 4,
   slidesToScroll: 4,
@@ -139,11 +142,3 @@ $(document).ready(function(){
      $('#back-to-top').tooltip('show');
 
 });
-
-
-// animation
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
-// AOS.init(
-//   duration= 1200,
-// );

@@ -1220,7 +1220,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .page-wrapper2 .post-slider2 {
-    max-width: 611px; }
+    max-width: 611px;
+    width: 611px; }
     .page-wrapper2 .post-slider2 .post-wrapper2 {
       width: 81%; }
       .page-wrapper2 .post-slider2 .post-wrapper2 .post {
