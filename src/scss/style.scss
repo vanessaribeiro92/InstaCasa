@@ -1342,8 +1342,8 @@
   // }
 
   .post-slider2 {
-    // max-width: 300px;
-    max-width: 299px;
+    max-width: 300px;
+    // max-width: 299px;
     margin: auto;
     // border: 1px solid red;
     position: relative;
@@ -1373,10 +1373,11 @@
 
     .post-wrapper2 {
       width: 84%;
+      height: 534px;
       // height: 575px;
       // height: 555px;
       // height: 548px;
-      height: 550px;
+      // height: 550px; *
       margin: 10px auto;
       overflow: hidden;
       // border: 1px dashed red;
@@ -1386,8 +1387,8 @@
         width: 234px !important;
         // width: 230px !important;
         // width: 233px !important;
-        // height: 513px;
-        height: 528px;
+        height: 513px;
+        // height: 528px;*
         margin: 10px 9px;
         display: inline-block;
         // background: blue;
@@ -1556,19 +1557,19 @@
   @media (min-width: $tablet) {
     .page-wrapper2 {
       .post-slider2 {
-        // max-width: 599px;
+        max-width: 599px;
         // max-width: 617px;
-        max-width: 611px;
-        width: 611px;
+        // max-width: 611px;*
+        // width: 611px;*
 
-        .post-wrapper2 {
-          width: 81%;
+        // .post-wrapper2 {
+        //   // width: 81%;
 
-          .post {
-            width: 230px !important;
-            // width: 232px !important;
-          }
-        }
+        //   .post {
+        //     // width: 230px !important;
+        //     // width: 232px !important;
+        //   }
+        // }
 
         .icon-nextCircle {
           width: 30px;
@@ -1592,12 +1593,12 @@
   @media (min-width: $laptop) {
     .page-wrapper2 {
       .post-slider2 {
-        // max-width: 894px;
-        max-width: 900px;
+        max-width: 894px;
+        // max-width: 900px;*
 
-        .post-wrapper2 {
-          width: 83%;
-        }
+        // .post-wrapper2 {
+        //   width: 83%;
+        // }
         .prev2 {
           left: 30px;
         }

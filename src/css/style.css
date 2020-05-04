@@ -1081,7 +1081,7 @@ p {
     top: -350px;
     left: 0px; }
   .page-wrapper2 .post-slider2 {
-    max-width: 299px;
+    max-width: 300px;
     margin: auto;
     position: relative; }
     .page-wrapper2 .post-slider2 .prev2 {
@@ -1102,12 +1102,12 @@ p {
       height: 25px; }
     .page-wrapper2 .post-slider2 .post-wrapper2 {
       width: 84%;
-      height: 550px;
+      height: 534px;
       margin: 10px auto;
       overflow: hidden; }
       .page-wrapper2 .post-slider2 .post-wrapper2 .post {
         width: 234px !important;
-        height: 528px;
+        height: 513px;
         margin: 10px 9px;
         display: inline-block; }
         .page-wrapper2 .post-slider2 .post-wrapper2 .post .slider-image {
@@ -1220,12 +1220,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .page-wrapper2 .post-slider2 {
-    max-width: 611px;
-    width: 611px; }
-    .page-wrapper2 .post-slider2 .post-wrapper2 {
-      width: 81%; }
-      .page-wrapper2 .post-slider2 .post-wrapper2 .post {
-        width: 230px !important; }
+    max-width: 599px; }
     .page-wrapper2 .post-slider2 .icon-nextCircle {
       width: 30px;
       height: 30px; }
@@ -1239,9 +1234,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   .page-wrapper2 .post-slider2 {
-    max-width: 900px; }
-    .page-wrapper2 .post-slider2 .post-wrapper2 {
-      width: 83%; }
+    max-width: 894px; }
     .page-wrapper2 .post-slider2 .prev2 {
       left: 30px; }
     .page-wrapper2 .post-slider2 .next2 {
