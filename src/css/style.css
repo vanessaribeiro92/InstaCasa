@@ -204,15 +204,20 @@ p {
   transform: rotate(90deg);
   border-radius: 0px; }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
   background-color: #f6df80;
   border-color: #f6df80;
   box-shadow: 0 0 0 0.2rem #ffc10775; }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #ffc10763; }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #f6df80;
   border-color: #f6df80; }
@@ -411,7 +416,7 @@ p {
     .info .waterAndSewage p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
   .info .asphaltGuidesAndGutters {
     grid-area: asphaltGuides;
     display: flex;
@@ -422,7 +427,7 @@ p {
     .info .asphaltGuidesAndGutters p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
   .info .land {
     grid-area: land;
     display: flex;
@@ -433,7 +438,7 @@ p {
     .info .land p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
   .info .electricityAndlighting {
     grid-area: eletricity;
     display: flex;
@@ -445,7 +450,7 @@ p {
     .info .electricityAndlighting p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
   .info .completeInfrastructure {
     grid-area: infrastructure;
     display: flex;
@@ -456,7 +461,7 @@ p {
     .info .completeInfrastructure p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
   .info .facilitatedFinancing {
     grid-area: financing;
     display: flex;
@@ -467,7 +472,7 @@ p {
     .info .facilitatedFinancing p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
   .info .detailedPlan {
     grid-area: detailedPlan;
     height: 300px;
@@ -476,7 +481,7 @@ p {
     .info .detailedPlan p {
       font-size: 14px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif; }
+      font-family: "Montserrat-SemiBold", sans-serif; }
     .info .detailedPlan .imgDetailedPlan {
       width: 95%;
       object-fit: cover;
@@ -645,6 +650,14 @@ p {
           width: 100%;
           height: 200px; }
 
+.photo .modal-dialog .modal-content .modal-body .imgPhoto {
+  width: 95%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  margin: auto; }
+  .photo .modal-dialog .modal-content .modal-body .imgPhoto img {
+    width: 100%; }
+
 @media screen and (min-width: 768px) {
   .page-wrapper {
     max-width: 700px; }
@@ -756,7 +769,7 @@ p {
       margin: 20px 20px; }
       .steps .iconsSteps .step1 p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px; }
     .steps .iconsSteps .step2 {
       grid-area: step2;
@@ -768,7 +781,7 @@ p {
       margin: 20px 20px; }
       .steps .iconsSteps .step2 p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px; }
     .steps .iconsSteps .step3 {
       grid-area: step3;
@@ -780,7 +793,7 @@ p {
       margin: 20px 20px; }
       .steps .iconsSteps .step3 p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px; }
     .steps .iconsSteps .step4 {
       grid-area: step4;
@@ -792,7 +805,7 @@ p {
       margin: 20px 20px 40px; }
       .steps .iconsSteps .step4 p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px; }
 
 @media screen and (min-width: 768px) {
@@ -1005,7 +1018,7 @@ p {
       margin-bottom: 10px;
       width: 280px;
       height: 46px;
-      font-family: 'Product-Sans-Regular',sans-serif; }
+      font-family: "Product-Sans-Regular", sans-serif; }
     .carouselQRCode .titleContainer::after {
       content: "";
       background-image: url(../images/icons/icone-quadrado.svg);
@@ -1022,7 +1035,7 @@ p {
       line-height: 30px;
       max-width: 275px;
       margin-top: 10px;
-      font-family: 'Product-Sans-Bold', sans-serif; }
+      font-family: "Product-Sans-Bold", sans-serif; }
 
 @media screen and (min-width: 768px) {
   .carouselQRCode {
@@ -1063,12 +1076,12 @@ p {
     background-color: #f6df80;
     width: 100%;
     height: 400px;
-    z-index: -9999;
+    z-index: -999;
     position: relative;
-    top: -334px;
+    top: -350px;
     left: 0px; }
   .page-wrapper2 .post-slider2 {
-    max-width: 300px;
+    max-width: 299px;
     margin: auto;
     position: relative; }
     .page-wrapper2 .post-slider2 .prev2 {
@@ -1089,12 +1102,12 @@ p {
       height: 25px; }
     .page-wrapper2 .post-slider2 .post-wrapper2 {
       width: 84%;
-      height: 534px;
+      height: 550px;
       margin: 10px auto;
       overflow: hidden; }
       .page-wrapper2 .post-slider2 .post-wrapper2 .post {
         width: 234px !important;
-        height: 513px;
+        height: 528px;
         margin: 10px 9px;
         display: inline-block; }
         .page-wrapper2 .post-slider2 .post-wrapper2 .post .slider-image {
@@ -1207,7 +1220,11 @@ p {
 
 @media screen and (min-width: 768px) {
   .page-wrapper2 .post-slider2 {
-    max-width: 599px; }
+    max-width: 611px; }
+    .page-wrapper2 .post-slider2 .post-wrapper2 {
+      width: 81%; }
+      .page-wrapper2 .post-slider2 .post-wrapper2 .post {
+        width: 230px !important; }
     .page-wrapper2 .post-slider2 .icon-nextCircle {
       width: 30px;
       height: 30px; }
@@ -1221,7 +1238,9 @@ p {
 
 @media screen and (min-width: 1024px) {
   .page-wrapper2 .post-slider2 {
-    max-width: 894px; }
+    max-width: 900px; }
+    .page-wrapper2 .post-slider2 .post-wrapper2 {
+      width: 83%; }
     .page-wrapper2 .post-slider2 .prev2 {
       left: 30px; }
     .page-wrapper2 .post-slider2 .next2 {
@@ -1326,11 +1345,11 @@ p {
       .app .appButtons .playStore {
         width: 230px; }
         .app .appButtons .playStore p {
-          font-family: 'Montserrat-Medium';
+          font-family: "Montserrat-Medium";
           font-size: 14px; }
       .app .appButtons .appStore {
         width: 230px;
-        font-family: 'Montserrat-Medium';
+        font-family: "Montserrat-Medium";
         font-size: 14px; } }
 
 @media screen and (min-width: 1024px) {
@@ -1406,7 +1425,7 @@ p {
       border: 1px solid #dddddd;
       border-radius: 0px;
       font-size: 16px;
-      font-family: "Montserrat-Regular",sans-serif; }
+      font-family: "Montserrat-Regular", sans-serif; }
     .contactForm .bootstrapContactForm span.error {
       font-size: 12px;
       font-weight: bold;
@@ -1500,3 +1519,9 @@ p {
     .footer .text {
       max-width: 50%;
       padding: 0px 10px 10px; } }
+
+.modal {
+  z-index: 999999999; }
+
+.gallery .modal-body {
+  padding: 0px; }

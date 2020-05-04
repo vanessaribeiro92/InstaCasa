@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="./src/css/modal-video.min.css">
 
   <!-- animation -->
-  <link  rel = " stylesheet "  href = " https://unpkg.com/aos@next/dist/aos.css " />
+  <link rel=" stylesheet " href=" https://unpkg.com/aos@next/dist/aos.css " />
+
+  <!-- Gallery inside Modal -->
+  <link href="./src/css/ninja-slider.css" rel="stylesheet" />
 
   <title>InstaCasa - Vila Porto</title>
 </head>
@@ -73,7 +76,7 @@
   </div>
 
   <!-- Video -->
-  <section class="videoBanner" >
+  <section class="videoBanner">
     <div class="containerContent">
       <div class="videoBannerContainer" data-aos="fade-up">
         <h4 class="title">Um bairro planejado para viver bem.</h4>
@@ -98,7 +101,7 @@
 
 
   <!-- info -->
-  <div class="info" id="info"  data-aos="fade-up">
+  <div class="info" id="info" data-aos="fade-up">
     <div class="vilaPortoLogo">
       <div class="imgBox"></div>
     </div>
@@ -216,7 +219,7 @@
 
   </div>
 
-  <!-- galery -->
+  <!-- galery  -->
 
   <div class="page-wrapper" data-aos="fade-up">
     <!-- Post Slider -->
@@ -225,26 +228,165 @@
       <i class="icon-next next"></i>
       <div class="post-wrapper">
         <div class="post">
+          <button type="button" data-toggle="modal" data-target="#photo1">
           <img src="./src/images/galeria01.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
         </div>
         <div class="post">
+          <button type="button" data-toggle="modal" data-target="#photo2">
           <img src="./src/images/galeria02.jpg" alt="Empreendimento 2" class="slider-image">
+          </button>
         </div>
         <div class="post">
+          <button type="button" data-toggle="modal" data-target="#photo3">
           <img src="./src/images/galeria03.jpg" alt="Empreendimento 3" class="slider-image">
+          </button>
         </div>
         <div class="post">
+          <button type="button" data-toggle="modal" data-target="#photo4">
           <img src="./src/images/galeria01.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
         </div>
         <div class="post">
+          <button type="button" data-toggle="modal" data-target="#photo5">
           <img src="./src/images/galeria02.jpg" alt="Empreendimento 2" class="slider-image">
+          </button>
         </div>
         <div class="post">
+          <button type="button" data-toggle="modal" data-target="#photo6">
           <img src="./src/images/galeria03.jpg" alt="Empreendimento 3" class="slider-image">
+          </button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- inside Modal - photo1 -->
+  <div class="modal fade photo" tabindex="-1" role="dialog" id="photo1">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+    </button>
+
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="imgPhoto">
+            <img src="./src/images/galeria01.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Photo1 -->
+    <!-- inside Modal - photo2 -->
+    <div class="modal fade photo" tabindex="-1" role="dialog" id="photo2">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      </button>
+  
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="imgPhoto">
+              <img src="./src/images/galeria02.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End inside Modal - Photo2 -->
+  <!-- inside Modal - photo3 -->
+  <div class="modal fade photo" tabindex="-1" role="dialog" id="photo3">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+    </button>
+
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="imgPhoto">
+            <img src="./src/images/galeria03.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Photo3 -->
+    <!-- inside Modal - photo4 -->
+    <div class="modal fade photo" tabindex="-1" role="dialog" id="photo4">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      </button>
+  
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="imgPhoto">
+              <img src="./src/images/galeria01.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End inside Modal - Photo4 -->
+      <!-- inside Modal - photo5 -->
+      <div class="modal fade photo" tabindex="-1" role="dialog" id="photo5">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        </button>
+    
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="imgPhoto">
+                <img src="./src/images/galeria02.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End inside Modal - Photo5 -->
+    <!-- inside Modal - photo6 -->
+    <div class="modal fade photo" tabindex="-1" role="dialog" id="photo6">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      </button>
+  
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="imgPhoto">
+              <img src="./src/images/galeria03.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End inside Modal - Photo6 -->
 
   <!-- Google Map -->
 
@@ -293,11 +435,12 @@
     </div>
     <div class="infoContent">
       <h4>#AquiTemInstaCasa</h4>
-      <p>Ao comprar um lote neste empreendimento você receberá um cartão do seu lote. Ele dará acesso a vantagens exclusivas através da plataforma e do app da InstaCasa.</p>
+      <p>Ao comprar um lote neste empreendimento você receberá um cartão do seu lote. Ele dará acesso a vantagens
+        exclusivas através da plataforma e do app da InstaCasa.</p>
     </div>
     <div class="benefit1">
       <i class="icon-project"></i>
-      <p>Projeto <br/>Arquitetônico</p>
+      <p>Projeto <br />Arquitetônico</p>
     </div>
     <div class="benefit2">
       <i class="icon-facilityFinancing"></i>
@@ -309,7 +452,7 @@
     </div>
     <div class="benefit4">
       <i class="icon-club"></i>
-      <p>Clube de <br/>Benefícios</p>
+      <p>Clube de <br />Benefícios</p>
     </div>
   </div>
 
@@ -329,7 +472,9 @@
       <i class="icon-nextCircle next2"></i>
       <div class="post-wrapper2">
         <div class="post">
-          <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <button type="button" data-toggle="modal" data-target="#gallery1">
+            <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
           <div class="post-info">
             <div class="infoCardQRCode">
               <div class="titleCard">
@@ -370,7 +515,9 @@
           </div>
         </div>
         <div class="post">
-          <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <button type="button" data-toggle="modal" data-target="#gallery2">
+            <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
           <div class="post-info">
             <div class="infoCardQRCode">
               <div class="titleCard">
@@ -411,7 +558,9 @@
           </div>
         </div>
         <div class="post">
-          <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <button type="button" data-toggle="modal" data-target="#gallery3">
+            <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
           <div class="post-info">
             <div class="infoCardQRCode">
               <div class="titleCard">
@@ -452,7 +601,9 @@
           </div>
         </div>
         <div class="post">
-          <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <button type="button" data-toggle="modal" data-target="#gallery4">
+            <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
           <div class="post-info">
             <div class="infoCardQRCode">
               <div class="titleCard">
@@ -493,7 +644,9 @@
           </div>
         </div>
         <div class="post">
-          <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          <button type="button" data-toggle="modal" data-target="#gallery5">
+            <img src="./src/images/imgProjeto.jpg" alt="Empreendimento 1" class="slider-image">
+          </button>
           <div class="post-info">
             <div class="infoCardQRCode">
               <div class="titleCard">
@@ -536,6 +689,132 @@
       </div>
     </div>
   </div>
+
+  <!-- inside Modal - Gallery1 -->
+  <div class="modal fade gallery" tabindex="-1" role="dialog" id="gallery1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="ninja-slider">
+            <div class="inner">
+              <ul>
+                <li><a class="ns-img" href="./src/images/galeria01.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria02.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria03.jpg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Gallery1 -->
+
+  <!-- inside Modal - Gallery2 -->
+  <div class="modal fade gallery" tabindex="-1" role="dialog" id="gallery2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="ninja-slider">
+            <div class="inner">
+              <ul>
+                <li><a class="ns-img" href="./src/images/imgCartoes.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/planta.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/img-smartphones.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Gallery2 -->
+
+  <!-- inside Modal - Gallery3 -->
+  <div class="modal fade gallery" tabindex="-1" role="dialog" id="gallery3">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="ninja-slider">
+            <div class="inner">
+              <ul>
+                <li><a class="ns-img" href="./src/images/galeria01.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria02.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria03.jpg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Gallery3 -->
+
+  <!-- inside Modal - Gallery4 -->
+  <div class="modal fade gallery" tabindex="-1" role="dialog" id="gallery4">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="ninja-slider">
+            <div class="inner">
+              <ul>
+                <li><a class="ns-img" href="./src/images/galeria01.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria02.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria03.jpg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Gallery4 -->
+
+  <!-- inside Modal - Gallery5 -->
+  <div class="modal fade gallery" tabindex="-1" role="dialog" id="gallery5">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="ninja-slider">
+            <div class="inner">
+              <ul>
+                <li><a class="ns-img" href="./src/images/galeria01.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria02.jpg"></a></li>
+                <li><a class="ns-img" href="./src/images/galeria03.jpg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End inside Modal - Gallery5 -->
+
 
   <!-- App -->
   <div class="app" data-aos="fade-up">
@@ -604,8 +883,8 @@
               <textarea class="form-control" name="text" id="msgContact" rows="4" placeholder="Mensagem*"></textarea>
             </div>
             <div class="containerBtn">
-            <button class="btn btn-primary">Enviar</button>
-          </div>
+              <button class="btn btn-primary">Enviar</button>
+            </div>
           </form>
         </div>
       </div>
@@ -620,11 +899,18 @@
       <img src="./src/images/logosRodape.jpg">
     </div>
     <div class="text">
-      <p>A cada realização, um novo aprendizado. A Realibrás/Conspar é como uma grande família. Funcionários, clientes, investidores e parceiros. Buscam manter e construir essa relação de tal forma que perdure durante toda a história. Empresas sempre atentas às últimas inovações do mercado. São 18 anos de know-how para planejar, desenvolver, construir e administrar loteamentos residenciais, comerciais, industriais e empresariais. Estão presentes nas principais cidades da região metropolitana e do interior de São Paulo. Possuem produtos residenciais, comerciais, empresariais e industriais. Mais de 40 empreendimentos lançados, mais de 12.000 unidades vendidas e mais de 4 milhões de m² de urbanização.</p>
+      <p>A cada realização, um novo aprendizado. A Realibrás/Conspar é como uma grande família. Funcionários, clientes,
+        investidores e parceiros. Buscam manter e construir essa relação de tal forma que perdure durante toda a
+        história. Empresas sempre atentas às últimas inovações do mercado. São 18 anos de know-how para planejar,
+        desenvolver, construir e administrar loteamentos residenciais, comerciais, industriais e empresariais. Estão
+        presentes nas principais cidades da região metropolitana e do interior de São Paulo. Possuem produtos
+        residenciais, comerciais, empresariais e industriais. Mais de 40 empreendimentos lançados, mais de 12.000
+        unidades vendidas e mais de 4 milhões de m² de urbanização.</p>
     </div>
   </div>
 
-  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip"
+    data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="./src/js/jquery.js"></script>
@@ -639,8 +925,8 @@
   <!-- Google Map JS -->
   <script type='text/javascript' src='js/map.js'> </script>
   <!-- Google Maps -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPL0asTBRlp1U1f8P426Wohs21uuYgFow&callback=initMap" adiamento
-    assíncrono> </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPL0asTBRlp1U1f8P426Wohs21uuYgFow&callback=initMap"
+    adiamento assíncrono> </script>
 
   <!-- JavaScript (Opcional) -->
   <script src="./src/js/script.js"></script>
@@ -651,12 +937,15 @@
   </script>
 
   <!-- Animation -->
-  <script  src = " https://unpkg.com/aos@next/dist/aos.js "></script>
+  <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
   <script>
     AOS.init(
-  duration= 1200,
-);
+      duration = 1200,
+    );
   </script>
+
+  <!-- Gallery inside Modal  -->
+  <script src="./src/js/ninja-slider.js" type="text/javascript"></script>
 </body>
 
 </html>

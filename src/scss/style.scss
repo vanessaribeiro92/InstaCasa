@@ -2,6 +2,7 @@
 @import "./variables.scss";
 @import "./typography.scss";
 @import "./layout.scss";
+// @import "./gallery.scss";
 
 .container {
   padding: 10px 10px;
@@ -11,32 +12,35 @@
 
 .back-to-top {
   content: "";
-  background-image: url('../images/icons/icone-setaYellow.svg');
+  background-image: url("../images/icons/icone-setaYellow.svg");
   cursor: pointer;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display:none;
+  display: none;
   width: 30px;
   height: 40px;
   border: 4px solid $yellow;
   background-color: transparent;
   transform: rotate(90deg);
   border-radius: 0px;
-
-
 }
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
   background-color: $lightYellow;
   border-color: $lightYellow;
-  box-shadow: 0 0 0 0.2rem #ffc10775
+  box-shadow: 0 0 0 0.2rem #ffc10775;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #ffc10763;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: $lightYellow;
   border-color: $lightYellow;
@@ -44,7 +48,7 @@
 
 .btn-primary:hover {
   content: "";
-  background-image: url('../images/icons/icone-seta.svg');
+  background-image: url("../images/icons/icone-seta.svg");
   border: 4px solid $yellow;
   background-color: $darkYellow;
   border-radius: 0px;
@@ -332,7 +336,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
   }
 
@@ -348,7 +352,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
   }
 
@@ -363,7 +367,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
   }
 
@@ -380,7 +384,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
   }
 
@@ -396,7 +400,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
   }
 
@@ -412,7 +416,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
   }
 
@@ -427,7 +431,7 @@
       font-size: 14px;
       // margin-top: 15px;
       line-height: 22px;
-      font-family: 'Montserrat-SemiBold',sans-serif;
+      font-family: "Montserrat-SemiBold", sans-serif;
     }
 
     .imgDetailedPlan {
@@ -716,6 +720,24 @@
   }
 }
 
+.photo {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        .imgPhoto {
+          width: 95%;
+          object-fit: contain;
+          background-repeat: no-repeat;
+          margin: auto;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen {
   @media (min-width: $tablet) {
     .page-wrapper {
@@ -880,7 +902,7 @@
       margin: 20px 20px;
       p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px;
       }
     }
@@ -894,7 +916,7 @@
       margin: 20px 20px;
       p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px;
       }
     }
@@ -908,7 +930,7 @@
       margin: 20px 20px;
       p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px;
       }
     }
@@ -923,7 +945,7 @@
 
       p {
         margin-top: 15px;
-        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-family: "Montserrat-SemiBold", sans-serif;
         font-size: 15px;
       }
     }
@@ -938,7 +960,7 @@
       padding: 10px 40px;
       margin: auto;
 
-      .text { 
+      .text {
         margin-top: 0px;
       }
 
@@ -947,7 +969,7 @@
         flex-direction: row;
         width: 520px;
         height: 64px;
-        
+
         .title {
           font-size: 30px;
           max-width: 566px;
@@ -1226,7 +1248,7 @@
       margin-bottom: 10px;
       width: 280px;
       height: 46px;
-      font-family: 'Product-Sans-Regular',sans-serif;
+      font-family: "Product-Sans-Regular", sans-serif;
     }
     &::after {
       content: "";
@@ -1246,7 +1268,7 @@
       line-height: 30px;
       max-width: 275px;
       margin-top: 10px;
-      font-family: 'Product-Sans-Bold', sans-serif;
+      font-family: "Product-Sans-Bold", sans-serif;
       // margin-bottom: 30px;
     }
   }
@@ -1303,9 +1325,10 @@
     background-color: $lightYellow;
     width: 100%;
     height: 400px;
-    z-index: -9999;
+    z-index: -999;
     position: relative;
-    top: -334px;
+    // top: -334px;
+    top: -350px;
     left: 0px;
   }
 
@@ -1319,7 +1342,8 @@
   // }
 
   .post-slider2 {
-    max-width: 300px;
+    // max-width: 300px;
+    max-width: 299px;
     margin: auto;
     // border: 1px solid red;
     position: relative;
@@ -1349,7 +1373,10 @@
 
     .post-wrapper2 {
       width: 84%;
-      height: 534px;
+      // height: 575px;
+      // height: 555px;
+      // height: 548px;
+      height: 550px;
       margin: 10px auto;
       overflow: hidden;
       // border: 1px dashed red;
@@ -1357,7 +1384,10 @@
 
       .post {
         width: 234px !important;
-        height: 513px;
+        // width: 230px !important;
+        // width: 233px !important;
+        // height: 513px;
+        height: 528px;
         margin: 10px 9px;
         display: inline-block;
         // background: blue;
@@ -1526,7 +1556,18 @@
   @media (min-width: $tablet) {
     .page-wrapper2 {
       .post-slider2 {
-        max-width: 599px;
+        // max-width: 599px;
+        // max-width: 617px;
+        max-width: 611px;
+
+        .post-wrapper2 {
+          width: 81%;
+
+          .post {
+            width: 230px !important;
+            // width: 232px !important;
+          }
+        }
 
         .icon-nextCircle {
           width: 30px;
@@ -1550,7 +1591,12 @@
   @media (min-width: $laptop) {
     .page-wrapper2 {
       .post-slider2 {
-        max-width: 894px;
+        // max-width: 894px;
+        max-width: 900px;
+
+        .post-wrapper2 {
+          width: 83%;
+        }
         .prev2 {
           left: 30px;
         }
@@ -1708,15 +1754,15 @@
 
         .playStore {
           width: 230px;
-          
+
           p {
-            font-family: 'Montserrat-Medium';
+            font-family: "Montserrat-Medium";
             font-size: 14px;
           }
         }
         .appStore {
           width: 230px;
-          font-family: 'Montserrat-Medium';
+          font-family: "Montserrat-Medium";
           font-size: 14px;
         }
       }
@@ -1754,12 +1800,12 @@
         justify-content: start;
 
         .playStore {
-          box-shadow: rgba(45,45,45,0.15);
+          box-shadow: rgba(45, 45, 45, 0.15);
           margin-bottom: 15px;
         }
         .appStore {
           margin-bottom: 15px;
-          box-shadow: rgba(45,45,45,0.15);
+          box-shadow: rgba(45, 45, 45, 0.15);
         }
       }
     }
@@ -1844,7 +1890,7 @@
       border: 1px solid $gray2;
       border-radius: 0px;
       font-size: 16px;
-      font-family: "Montserrat-Regular",sans-serif;
+      font-family: "Montserrat-Regular", sans-serif;
     }
 
     span.error {
@@ -1866,7 +1912,7 @@
         font-weight: bold;
         border-radius: 0px;
         width: 100%;
-  
+
         &:hover {
           background-color: $yellow;
           color: $black;
@@ -1874,7 +1920,7 @@
         }
       }
     }
-    
+
     input.error,
     textarea.error {
       border-color: red;
@@ -1919,12 +1965,11 @@
       .contactForm {
         width: 910px;
         max-width: 910px;
-        grid-gap:90px;
+        grid-gap: 90px;
 
         .messageContactForm {
           padding: 75px 65px 15px 15px;
         }
-
       }
     }
   }
@@ -1995,5 +2040,17 @@
         padding: 0px 10px 10px;
       }
     }
+  }
+}
+
+//  gallery inside modal
+
+.modal {
+  z-index: 999999999;
+}
+
+.gallery {
+  .modal-body {
+    padding: 0px;
   }
 }
