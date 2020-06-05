@@ -108,6 +108,7 @@
   border-top: none;
   border-bottom: none;
   border-radius: 50px;
+  background-color: $darkYellow;
 }
 
 .carousel-control-prev,
@@ -123,43 +124,7 @@
 }
 
 @media screen {
-  @media (min-width: $tablet) {
-    .carousel {
-      height: 330px;
-    }
-
-    .carousel-item {
-      img {
-        height: 330px;
-      }
-    }
-  }
-
-  @media (min-width: $laptop) {
-    .carousel {
-      height: 400px;
-    }
-
-    .carousel-item {
-      img {
-        height: 400px;
-      }
-    }
-  }
-
-  @media (min-width: $desktop) {
-    .carousel {
-      height: 500px;
-    }
-
-    .carousel-item {
-      img {
-        height: 500px;
-      }
-    }
-  }
-
-  @media (min-width: $desktopLarge) {
+  @media (min-width: 450px) {
     .carousel {
       height: 100%;
     }
@@ -170,6 +135,7 @@
       }
     }
   }
+
 }
 
 // videoBanner
@@ -180,13 +146,19 @@
   object-fit: cover;
   width: 100%;
   height: 500px;
+  position: relative;
+
+  // iframe {
+  //   width: 100%;
+  //   height: 500px;
+  // }
   .containerContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 300px;
+    max-width: 600px;
     margin: auto;
 
     .videoBannerContainer {
@@ -215,7 +187,7 @@
         .icon-play {
           width: 60px;
           height: 60px;
-          margin-top: 20px;
+          margin-top: 40px;
           border-radius: 50px;
           box-shadow: 0px 8px 18px #00000050;
           &:hover {
@@ -230,9 +202,9 @@
       height: 68px;
       background-color: $black;
       text-align: center;
-      position: relative;
-      top: 90px;
-      left: 0px;
+      position: absolute;
+      top: 467px;
+      margin: auto;
 
       .meetNewHouseButton {
         font-family: "Montserrat-SemiBold";
@@ -278,14 +250,11 @@
           max-width: 930px;
           .title {
             font-size: 30px;
+            margin-top: 0px;
           }
           .text {
             font-size: 30px;
           }
-        }
-
-        .meetNewHouse {
-          top: 93px;
         }
       }
     }

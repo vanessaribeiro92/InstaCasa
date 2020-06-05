@@ -267,7 +267,8 @@ p {
   height: 8px;
   border-top: none;
   border-bottom: none;
-  border-radius: 50px; }
+  border-radius: 50px;
+  background-color: #FFB001; }
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -277,25 +278,7 @@ p {
   height: 200px;
   object-fit: cover; }
 
-@media screen and (min-width: 768px) {
-  .carousel {
-    height: 330px; }
-  .carousel-item img {
-    height: 330px; } }
-
-@media screen and (min-width: 1024px) {
-  .carousel {
-    height: 400px; }
-  .carousel-item img {
-    height: 400px; } }
-
-@media screen and (min-width: 1440px) {
-  .carousel {
-    height: 500px; }
-  .carousel-item img {
-    height: 500px; } }
-
-@media screen and (min-width: 1570px) {
+@media screen and (min-width: 450px) {
   .carousel {
     height: 100%; }
   .carousel-item img {
@@ -307,14 +290,15 @@ p {
   background-repeat: no-repeat;
   object-fit: cover;
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  position: relative; }
   .videoBanner .containerContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 300px;
+    max-width: 600px;
     margin: auto; }
     .videoBanner .containerContent .videoBannerContainer {
       display: flex;
@@ -337,7 +321,7 @@ p {
       .videoBanner .containerContent .videoBannerContainer .video-play .icon-play {
         width: 60px;
         height: 60px;
-        margin-top: 20px;
+        margin-top: 40px;
         border-radius: 50px;
         box-shadow: 0px 8px 18px #00000050; }
         .videoBanner .containerContent .videoBannerContainer .video-play .icon-play:hover {
@@ -347,9 +331,9 @@ p {
       height: 68px;
       background-color: #000000;
       text-align: center;
-      position: relative;
-      top: 90px;
-      left: 0px; }
+      position: absolute;
+      top: 467px;
+      margin: auto; }
       .videoBanner .containerContent .meetNewHouse .meetNewHouseButton {
         font-family: "Montserrat-SemiBold";
         font-size: 15px;
@@ -380,11 +364,10 @@ p {
     .videoBanner .containerContent .videoBannerContainer {
       max-width: 930px; }
       .videoBanner .containerContent .videoBannerContainer .title {
-        font-size: 30px; }
+        font-size: 30px;
+        margin-top: 0px; }
       .videoBanner .containerContent .videoBannerContainer .text {
-        font-size: 30px; }
-    .videoBanner .containerContent .meetNewHouse {
-      top: 93px; } }
+        font-size: 30px; } }
 
 @media screen and (min-width: 1024px) {
   .videoBanner .containerContent {
