@@ -52,7 +52,7 @@ $('.post-wrapper').slick({
 $('.post-wrapper2').slick({
   slidesToShow: 4,
   slidesToScroll: 4,
-  // autoplay: true,
+  autoplay: false,
   // autoplaySpeed: 2000,
   nextArrow: $('.next2'),
   prevArrow: $('.prev2'),

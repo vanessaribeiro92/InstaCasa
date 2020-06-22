@@ -78,14 +78,19 @@
   <!-- Video -->
   <section class="videoBanner">
     <div class="containerContent">
-      <div class="videoBannerContainer" data-aos="fade-up">
+      <div class="videoBannerContainer"  data-aos="fade-up">
         <h4 class="title">Um bairro planejado para viver bem.</h4>
         <p class="text">Tenha o privilégio de morar com qualidade de vida, num bairro planejado para você e sua família.
         </p>
 
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <!-- 
         <button class="video-play" data-video-id="xcJtL7QggTI">
-          <img class="icon-play" src="./src/images/icons/icone-play.png" />
-        </button>
+          <img class="icon-play" src="./images/icons/icone-play.png" />
+        </button> -->
       </div>
 
       <button class="meetNewHouse">
@@ -701,7 +706,14 @@
         </div>
         <div class="modal-body">
 
-          <div id="gallerySliders1" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false">
+          <div 
+          id="gallerySliders1" 
+          class="carousel slide" 
+          data-ride="false" 
+          data-wrap="false" 
+          data-interval="false"
+          pause="false"
+          >
             <ol class="carousel-indicators">
               <li data-target="#gallerySliders1" data-slide-to="0" class="active"></li>
               <li data-target="#gallerySliders1" data-slide-to="1"></li>
@@ -745,7 +757,7 @@
         </div>
         <div class="modal-body">
          
-          <div id="gallerySliders2" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false">
+          <div id="gallerySliders2" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false" pause="false">
             <ol class="carousel-indicators">
               <li data-target="#gallerySliders2" data-slide-to="0" class="active"></li>
               <li data-target="#gallerySliders2" data-slide-to="1"></li>
@@ -789,7 +801,7 @@
         </div>
         <div class="modal-body">
 
-          <div id="gallerySliders3" class="carousel slide"data-ride="false" data-wrap="false" data-interval="false">
+          <div id="gallerySliders3" class="carousel slide"data-ride="false" data-wrap="false" data-interval="false" pause="false">
             <ol class="carousel-indicators">
               <li data-target="#gallerySliders3" data-slide-to="0" class="active"></li>
               <li data-target="#gallerySliders3" data-slide-to="1"></li>
@@ -832,7 +844,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div id="gallerySliders4" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false">
+          <div id="gallerySliders4" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false" pause="false">
             <ol class="carousel-indicators">
               <li data-target="#gallerySliders4" data-slide-to="0" class="active"></li>
               <li data-target="#gallerySliders4" data-slide-to="1"></li>
@@ -874,7 +886,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div id="gallerySliders5" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false">
+          <div id="gallerySliders5" class="carousel slide" data-ride="false" data-wrap="false" data-interval="false" pause="false">
             <ol class="carousel-indicators">
               <li data-target="#gallerySliders5" data-slide-to="0" class="active"></li>
               <li data-target="#gallerySliders5" data-slide-to="1"></li>
@@ -933,10 +945,23 @@
     </div>
   </div>
 
-  <!-- Virtual Tour 360 -->
-  <div class="virtualTour">
+  <!-- Virtual Tour 1-->
+  <div class="virtualTour1">
+    <div class="titleContainer">
+      <h4 class="title">Faça um Tour Virtual pelo empreendimento</h4>
+      <h4 class="subTitle">Descubra como pode ser sua futura casa</h4>
+    </div>
     <img src="./src/images/tourVirtual.jpg">
   </div>
+
+  <!-- Virtual Tour 2 -->
+  <div class="virtualTour2">
+    <div class="titleContainer">
+      <h4 class="title">InstaCasa decorada Tour</h4>
+    </div>
+    <img src="./src/images/tourVirtual.jpg">
+  </div>
+
   <!-- contact form -->
   <div class="contactForm" id="contact" data-aos="fade-up">
     <div class="messageContactForm">
@@ -987,7 +1012,8 @@
 
   <div class="footer">
     <div class="logo">
-      <img src="./src/images/logosRodape.jpg">
+      <img class="logo1" src="./src/images/logo-rodape1.png">
+      <img class="logo2" src="./src/images/logo-rodape2.png">
     </div>
     <div class="text">
       <p>A cada realização, um novo aprendizado. A Realibrás/Conspar é como uma grande família. Funcionários, clientes,
