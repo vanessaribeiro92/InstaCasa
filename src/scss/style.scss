@@ -24,6 +24,7 @@
   background-color: transparent;
   transform: rotate(90deg);
   border-radius: 0px;
+  z-index: 999;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -182,7 +183,7 @@
         font-family: "Product-Sans-Bold", sans-serif;
         font-weight: 600;
         // margin-top: 100px;
-        margin-top: 45px;
+        margin-top: 35px;
         padding: 0px 10px;
         grid-area: title;
       }
@@ -1647,6 +1648,18 @@
           right: 25px;
         }
       }
+    }
+  }
+}
+
+.subtitlePostSlider {
+  margin: -60px auto auto;
+  padding: 0px 20px;
+  text-align: center;
+
+  @media screen {
+    @media (min-width:$tablet) {
+      margin: -50px auto auto;
     }
   }
 }
