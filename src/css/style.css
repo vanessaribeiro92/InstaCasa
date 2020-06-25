@@ -1638,7 +1638,7 @@ p {
     .footer .logo {
       flex-direction: row; }
       .footer .logo img {
-        width: 90%; }
+        width: 50%; }
     .footer .text {
       max-width: 50%;
       padding: 0px 10px 10px; } }
