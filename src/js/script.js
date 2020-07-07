@@ -1,144 +1,156 @@
 // video
-$(function() {
+$(function () {
   $(".video").click(function () {
     var theModal = $(this).data("target"),
-    videoSRC = $(this).attr("data-video"),
-    videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-    $(theModal + ' iframe').attr('src', videoSRCauto);
-    $(theModal + ' button.close').click(function () {
-      $(theModal + ' iframe').attr('src', videoSRC);
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto =
+        videoSRC +
+        "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+    $(theModal + " iframe").attr("src", videoSRCauto);
+    $(theModal + " button.close").click(function () {
+      $(theModal + " iframe").attr("src", videoSRC);
     });
   });
 });
 
 // carousel photo
-$('.post-wrapper').slick({
+$(".post-wrapper").slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   // autoplay: true,
   // autoplaySpeed: 2000,
-  nextArrow: $('.next'),
-  prevArrow: $('.prev'),
+  nextArrow: $(".next"),
+  prevArrow: $(".prev"),
   responsive: [
     {
       breakpoint: 1100,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
-      }
+        slidesToScroll: 3,
+      },
     },
     {
       breakpoint: 1023,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
-      }
+        slidesToScroll: 2,
+      },
     },
     {
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-      }
+      },
     },
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
+  ],
 });
 
-
 // carousel QRCode
-$('.post-wrapper2').slick({
+$(".post-wrapper2").slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   autoplay: false,
   // autoplaySpeed: 2000,
-  nextArrow: $('.next2'),
-  prevArrow: $('.prev2'),
+  nextArrow: $(".next2"),
+  prevArrow: $(".prev2"),
   responsive: [
     {
       breakpoint: 1440,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 4
-      }
+        slidesToScroll: 4,
+      },
     },
     {
       breakpoint: 1439,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
-      }
+        slidesToScroll: 3,
+      },
     },
     {
       breakpoint: 1023,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
-      }
+        slidesToScroll: 2,
+      },
     },
     {
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-      }
+      },
     },
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
+  ],
 });
-  
+
+// slides inside post-wrapper
+$(".post-wrapper3").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  // autoplaySpeed: 2000,
+  nextArrow: $(".next3"),
+  prevArrow: $(".prev3"),
+});
 
 // Form
 
-let form = $('.form-contact');
+let form = $(".form-contact");
 
 form.validate({
-    errorElement: 'span',
-    rules: {
-        nome: 'required',
-        email: {
-            required: true,
-            email: true
-        },
-        phone: 'required',
-        text:'required',
-        // subject:'required',
+  errorElement: "span",
+  rules: {
+    nome: "required",
+    email: {
+      required: true,
+      email: true,
     },
-    messages: {
-        nome: 'Por favor, digite o seu nome',
-        email: {
-        required: 'Por favor, digite seu e-mail',
-        email: 'Por favor, digite um e-mail válido'
-        },
-        phone:'Por favor, digite seu telefone',
-        text:'Por favor, digite uma mensagem',
-        // subject:'Por favor, escolha um assunto',
+    phone: "required",
+    text: "required",
+    // subject:'required',
+  },
+  messages: {
+    nome: "Por favor, digite o seu nome",
+    email: {
+      required: "Por favor, digite seu e-mail",
+      email: "Por favor, digite um e-mail válido",
     },
+    phone: "Por favor, digite seu telefone",
+    text: "Por favor, digite uma mensagem",
+    // subject:'Por favor, escolha um assunto',
+  },
 });
 
 // Button back to top
-    
-$(document).ready(function(){
-  $(window).scroll(function () {
-         if ($(this).scrollTop() > 50) {
-             $('#back-to-top').fadeIn();
-         } else {
-             $('#back-to-top').fadeOut();
-         }
-     });
-     // scroll body to 0px on click
-     $('#back-to-top').click(function () {
-         $('#back-to-top').tooltip('hide');
-         $('body,html').animate({
-             scrollTop: 0
-         }, 200);
-         return false;
-     });
-     
-     $('#back-to-top').tooltip('show');
 
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $("#back-to-top").fadeIn();
+    } else {
+      $("#back-to-top").fadeOut();
+    }
+  });
+  // scroll body to 0px on click
+  $("#back-to-top").click(function () {
+    $("#back-to-top").tooltip("hide");
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      200
+    );
+    return false;
+  });
+
+  $("#back-to-top").tooltip("show");
 });

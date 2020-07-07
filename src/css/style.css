@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+  *:focus {
+    outline: none; }
 
 html {
   scroll-behavior: smooth; }
@@ -679,6 +681,38 @@ p {
       left: 30px; }
     .page-wrapper .post-slider .next {
       right: 30px; } }
+
+.page-wrapper3 {
+  margin: auto;
+  width: 100%;
+  height: auto; }
+  .page-wrapper3 .post-slider3 {
+    position: relative;
+    margin: auto; }
+    .page-wrapper3 .post-slider3 .prev3 {
+      position: absolute;
+      top: 50%;
+      left: 9px;
+      cursor: pointer;
+      z-index: 5; }
+    .page-wrapper3 .post-slider3 .next3 {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      cursor: pointer;
+      z-index: 5; }
+    .page-wrapper3 .post-slider3 .post-wrapper3 {
+      width: 100%;
+      margin: 10px auto;
+      overflow: hidden; }
+      .page-wrapper3 .post-slider3 .post-wrapper3 .post {
+        width: 250px;
+        margin: 10px 10px;
+        display: inline-block; }
+        .page-wrapper3 .post-slider3 .post-wrapper3 .post .slider-image {
+          width: 100%;
+          height: auto;
+          object-fit: contain; }
 
 .cardMap {
   position: relative;
