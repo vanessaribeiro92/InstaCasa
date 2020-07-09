@@ -93,13 +93,65 @@ $(".post-wrapper2").slick({
 });
 
 // slides inside post-wrapper
-$(".post-wrapper3").slick({
+// cardQRCode1
+{
+  $("#gallery1").on('click touch', function(event) {
+    var modalImagem = $('.post');
+    modalImagem.addClass('active');
+    $(window).trigger("resize");
+  });
+
+  $(".post-wrapper3").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // initialSlide: 1,
+    // autoplaySpeed: 50000,
+    nextArrow: $(".next3"),
+    prevArrow: $(".prev3"),
+  });
+
+ 
+}
+
+// cardQRCode2
+$(".post-wrapper4").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
-  // autoplaySpeed: 2000,
-  nextArrow: $(".next3"),
-  prevArrow: $(".prev3"),
+  // autoplay: true,
+  // autoplaySpeed: 50000,
+  nextArrow: $(".next4"),
+  prevArrow: $(".prev4"),
+});
+
+// cardQRCode3
+$(".post-wrapper5").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 50000,
+  nextArrow: $(".next5"),
+  prevArrow: $(".prev5"),
+});
+
+// cardQRCode4
+$(".post-wrapper6").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 50000,
+  nextArrow: $(".next6"),
+  prevArrow: $(".prev6"),
+});
+
+// cardQRCode5
+$(".post-wrapper7").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 50000,
+  nextArrow: $(".next7"),
+  prevArrow: $(".prev7"),
 });
 
 // Form
