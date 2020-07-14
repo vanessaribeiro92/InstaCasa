@@ -308,7 +308,9 @@ p {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-gap: 20px;
-      grid-template-areas: "title" "text" "video"; }
+      grid-template-areas: "title"
+ "text"
+ "video"; }
       .videoBanner .containerContent .videoBannerContainer .title {
         font-size: 26px;
         text-align: center;
@@ -377,7 +379,8 @@ p {
       max-width: 930px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
-      grid-template-areas: "title video" "text video"; }
+      grid-template-areas: "title video"
+ "text video"; }
       .videoBanner .containerContent .videoBannerContainer .title {
         font-size: 30px;
         margin-top: auto; }
@@ -402,7 +405,11 @@ p {
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "vilaPorto vilaPorto" "water eletricity" "asphaltGuides infrastructure" "land financing" "detailedPlan detailedPlan"; }
+  grid-template-areas: "vilaPorto vilaPorto"
+ "water eletricity"
+ "asphaltGuides infrastructure"
+ "land financing"
+ "detailedPlan detailedPlan"; }
   .info .vilaPortoLogo {
     grid-area: vilaPorto;
     width: 200px;
@@ -523,7 +530,10 @@ p {
     padding: 50px 30px 20px;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto" "water detailedPlan detailedPlan detailedPlan detailedPlan eletricity" "asphaltGuides detailedPlan detailedPlan detailedPlan detailedPlan infrastructure" "land detailedPlan detailedPlan detailedPlan detailedPlan financing"; }
+    grid-template-areas: "vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto"
+ "water detailedPlan detailedPlan detailedPlan detailedPlan eletricity"
+ "asphaltGuides detailedPlan detailedPlan detailedPlan detailedPlan infrastructure"
+ "land detailedPlan detailedPlan detailedPlan detailedPlan financing"; }
     .info .detailedPlan {
       margin: auto;
       max-width: 354px; }
@@ -799,7 +809,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "step1 step2" "step3 step4"; }
+    grid-template-areas: "step1 step2"
+ "step3 step4"; }
     .steps .iconsSteps .step1 {
       grid-area: step1;
       display: flex;
@@ -940,7 +951,10 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "infoContent infoContent" "cardsVilaPorto cardsVilaPorto" "benefit1 benefit2" "benefit3 benefit4"; }
+  grid-template-areas: "infoContent infoContent"
+ "cardsVilaPorto cardsVilaPorto"
+ "benefit1 benefit2"
+ "benefit3 benefit4"; }
   .benefitCard .cardsVilaPorto {
     grid-area: cardsVilaPorto;
     margin-top: 20px; }
@@ -1021,7 +1035,8 @@ p {
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "cardsVilaPorto cardsVilaPorto infoContent infoContent" "benefit1 benefit2 benefit3 benefit4"; }
+    grid-template-areas: "cardsVilaPorto cardsVilaPorto infoContent infoContent"
+ "benefit1 benefit2 benefit3 benefit4"; }
     .benefitCard .infoContent {
       padding: 0px 20px; }
       .benefitCard .infoContent p {
@@ -1161,7 +1176,12 @@ p {
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "titleCard titleCard" "description1 descriptionValue1" "description2 descriptionValue2" "description3 descriptionValue3" "description4 descriptionValue4" "qrCode qrCodeInstructions";
+        grid-template-areas: "titleCard titleCard"
+ "description1 descriptionValue1"
+ "description2 descriptionValue2"
+ "description3 descriptionValue3"
+ "description4 descriptionValue4"
+ "qrCode qrCodeInstructions";
         width: 235px;
         margin: auto;
         padding-bottom: 25px;
@@ -1309,7 +1329,9 @@ p {
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "appInfo" "appButtons" "phoneImg"; }
+  grid-template-areas: "appInfo"
+ "appButtons"
+ "phoneImg"; }
   .app .appInfo {
     grid-area: appInfo;
     padding: 0px 25px 20px;
@@ -1376,7 +1398,8 @@ p {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "phoneImg appInfo" "phoneImg appButtons"; }
+    grid-template-areas: "phoneImg appInfo"
+ "phoneImg appButtons"; }
     .app .appInfo {
       padding: 0px;
       margin-right: 50px; }
@@ -1554,7 +1577,8 @@ p {
   grid-gap: 0px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "messageContactForm" "bootstrapContactForm"; }
+  grid-template-areas: "messageContactForm"
+ "bootstrapContactForm"; }
   .contactForm .messageContactForm {
     grid-area: messageContactForm;
     font-size: 30px;
