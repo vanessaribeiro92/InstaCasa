@@ -30,43 +30,36 @@ p {
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Montserrat-Light';
   src: url("../fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Montserrat-Medium';
   src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Montserrat-Semibold';
   src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Product-Sans-Regular';
   src: url("../fonts/product-sans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Product-Sans-Bold';
   src: url("../fonts/product-sans-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 [class^="icon-"],
 [class*=" icon-"] {
   content: "";
@@ -76,6 +69,10 @@ p {
   display: inline-block;
   height: 30px;
   width: 30px; }
+
+.icon-img {
+  height: 90px;
+  width: 90px; }
 
 .icon-arrowWhite {
   background-image: url("../images/icons/icone-seta.svg"); }
@@ -256,12 +253,12 @@ p {
 @media screen and (min-width: 1024px) {
   .navbar {
     padding: 0.5rem 2rem; }
+
   .navbar-brand {
     width: 50%; }
     .navbar-brand img {
       width: 33%;
       height: 80px; } }
-
 .carousel {
   height: 200px; }
 
@@ -284,9 +281,9 @@ p {
 @media screen and (min-width: 450px) {
   .carousel {
     height: 100%; }
+
   .carousel-item img {
     height: 100%; } }
-
 .videoBanner {
   background-image: url("../images/bgVideo.jpg");
   background-size: cover;
@@ -308,9 +305,7 @@ p {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-gap: 20px;
-      grid-template-areas: "title"
- "text"
- "video"; }
+      grid-template-areas: "title" "text" "video"; }
       .videoBanner .containerContent .videoBannerContainer .title {
         font-size: 26px;
         text-align: center;
@@ -379,8 +374,7 @@ p {
       max-width: 930px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
-      grid-template-areas: "title video"
- "text video"; }
+      grid-template-areas: "title video" "text video"; }
       .videoBanner .containerContent .videoBannerContainer .title {
         font-size: 30px;
         margin-top: auto; }
@@ -389,14 +383,12 @@ p {
       .videoBanner .containerContent .videoBannerContainer .video iframe {
         width: 340px;
         height: 192px; } }
-
 @media screen and (min-width: 1024px) {
   .videoBanner .containerContent {
     max-width: 1024px; }
     .videoBanner .containerContent .videoBannerContainer .video iframe {
       width: 454px;
       height: 256px; } }
-
 .info {
   max-width: 300px;
   margin: auto;
@@ -405,11 +397,7 @@ p {
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "vilaPorto vilaPorto"
- "water eletricity"
- "asphaltGuides infrastructure"
- "land financing"
- "detailedPlan detailedPlan"; }
+  grid-template-areas: "vilaPorto vilaPorto" "water eletricity" "asphaltGuides infrastructure" "land financing" "detailedPlan detailedPlan"; }
   .info .vilaPortoLogo {
     grid-area: vilaPorto;
     width: 200px;
@@ -530,10 +518,7 @@ p {
     padding: 50px 30px 20px;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto"
- "water detailedPlan detailedPlan detailedPlan detailedPlan eletricity"
- "asphaltGuides detailedPlan detailedPlan detailedPlan detailedPlan infrastructure"
- "land detailedPlan detailedPlan detailedPlan detailedPlan financing"; }
+    grid-template-areas: "vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto vilaPorto" "water detailedPlan detailedPlan detailedPlan detailedPlan eletricity" "asphaltGuides detailedPlan detailedPlan detailedPlan detailedPlan infrastructure" "land detailedPlan detailedPlan detailedPlan detailedPlan financing"; }
     .info .detailedPlan {
       margin: auto;
       max-width: 354px; }
@@ -551,7 +536,6 @@ p {
             width: 100%; }
       .info .detailedPlan .modal-dialog {
         max-width: 710px; } }
-
 @media screen and (min-width: 1024px) {
   .info .waterAndSewage {
     grid-area: water;
@@ -590,7 +574,6 @@ p {
           width: 100%; }
     .info .detailedPlan .modal-dialog {
       max-width: 830px; } }
-
 .statusType {
   display: flex;
   flex-direction: column;
@@ -634,7 +617,6 @@ p {
     .statusType .statusTypeContainer {
       display: flex;
       flex-direction: column; } }
-
 .page-wrapper {
   padding: 0px 10px;
   margin: auto;
@@ -683,7 +665,6 @@ p {
       left: 20px; }
     .page-wrapper .post-slider .next {
       right: 20px; } }
-
 @media screen and (min-width: 1024px) {
   .page-wrapper {
     max-width: 975px; }
@@ -691,7 +672,6 @@ p {
       left: 30px; }
     .page-wrapper .post-slider .next {
       right: 30px; } }
-
 .page-wrapper3, .page-wrapper4, .page-wrapper5, .page-wrapper6, .page-wrapper7 {
   margin: auto;
   max-width: 500px; }
@@ -766,7 +746,6 @@ p {
     padding: 20px 0px 50px; }
     .mapContainer .map {
       height: 500px; } }
-
 .steps {
   padding: 20px 5px;
   width: 300px;
@@ -809,8 +788,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "step1 step2"
- "step3 step4"; }
+    grid-template-areas: "step1 step2" "step3 step4"; }
     .steps .iconsSteps .step1 {
       grid-area: step1;
       display: flex;
@@ -925,7 +903,6 @@ p {
           z-index: 4; }
       .steps .iconsSteps .step4 i {
         margin-top: 20px; } }
-
 .divider {
   border-bottom: 1px solid #dddddd;
   width: 80%;
@@ -935,12 +912,10 @@ p {
   .divider {
     width: 700px;
     margin: 20px auto; } }
-
 @media screen and (min-width: 1024px) {
   .divider {
     width: 910px;
     margin: 20px auto; } }
-
 .benefitCardContainer {
   max-width: 320px;
   margin: auto auto 60px; }
@@ -951,10 +926,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "infoContent infoContent"
- "cardsVilaPorto cardsVilaPorto"
- "benefit1 benefit2"
- "benefit3 benefit4"; }
+  grid-template-areas: "infoContent infoContent" "cardsVilaPorto cardsVilaPorto" "benefit1 benefit2" "benefit3 benefit4"; }
   .benefitCard .cardsVilaPorto {
     grid-area: cardsVilaPorto;
     margin-top: 20px; }
@@ -1029,14 +1001,14 @@ p {
 @media screen and (min-width: 768px) {
   .benefitCardContainer {
     max-width: 768px; }
+
   .benefitCard {
     padding: 0px 10px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "cardsVilaPorto cardsVilaPorto infoContent infoContent"
- "benefit1 benefit2 benefit3 benefit4"; }
+    grid-template-areas: "cardsVilaPorto cardsVilaPorto infoContent infoContent" "benefit1 benefit2 benefit3 benefit4"; }
     .benefitCard .infoContent {
       padding: 0px 20px; }
       .benefitCard .infoContent p {
@@ -1047,7 +1019,6 @@ p {
       margin-top: 0px; }
     .benefitCard .benefit2 {
       margin: 20px 5px; } }
-
 @media screen and (min-width: 1024px) {
   .benefitCard {
     max-width: 910px;
@@ -1056,7 +1027,6 @@ p {
       width: 90%; }
     .benefitCard .infoContent {
       padding-left: 25px; } }
-
 .carouselQRCode {
   width: 300px;
   margin: auto;
@@ -1125,7 +1095,6 @@ p {
         margin-top: 0px;
         font-family: "Product-Sans-Regular", sans-serif;
         font-size: 30px; } }
-
 .page-wrapper2 {
   display: grid;
   height: 620px; }
@@ -1176,12 +1145,7 @@ p {
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "titleCard titleCard"
- "description1 descriptionValue1"
- "description2 descriptionValue2"
- "description3 descriptionValue3"
- "description4 descriptionValue4"
- "qrCode qrCodeInstructions";
+        grid-template-areas: "titleCard titleCard" "description1 descriptionValue1" "description2 descriptionValue2" "description3 descriptionValue3" "description4 descriptionValue4" "qrCode qrCodeInstructions";
         width: 235px;
         margin: auto;
         padding-bottom: 25px;
@@ -1294,7 +1258,6 @@ p {
       left: 20px; }
     .page-wrapper2 .post-slider2 .next2 {
       right: 20px; } }
-
 @media screen and (min-width: 1024px) {
   .page-wrapper2 .post-slider2 {
     max-width: 894px; }
@@ -1302,7 +1265,6 @@ p {
       left: 30px; }
     .page-wrapper2 .post-slider2 .next2 {
       right: 30px; } }
-
 @media screen and (min-width: 1440px) {
   .page-wrapper2 .post-slider2 {
     max-width: 1200px; }
@@ -1310,12 +1272,10 @@ p {
       left: 25px; }
     .page-wrapper2 .post-slider2 .next2 {
       right: 25px; } }
-
 .subtitlePostSlider {
   margin: -60px auto auto;
   padding: 0px 20px;
   text-align: center; }
-
 @media screen and (min-width: 768px) {
   .subtitlePostSlider {
     margin: -50px auto auto; } }
@@ -1329,9 +1289,7 @@ p {
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "appInfo"
- "appButtons"
- "phoneImg"; }
+  grid-template-areas: "appInfo" "appButtons" "phoneImg"; }
   .app .appInfo {
     grid-area: appInfo;
     padding: 0px 25px 20px;
@@ -1398,8 +1356,7 @@ p {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "phoneImg appInfo"
- "phoneImg appButtons"; }
+    grid-template-areas: "phoneImg appInfo" "phoneImg appButtons"; }
     .app .appInfo {
       padding: 0px;
       margin-right: 50px; }
@@ -1420,7 +1377,6 @@ p {
         width: 230px;
         font-family: "Montserrat-Medium";
         font-size: 14px; } }
-
 @media screen and (min-width: 1024px) {
   .app {
     max-width: 910px;
@@ -1446,7 +1402,6 @@ p {
       .app .appButtons .appStore {
         margin-bottom: 15px;
         box-shadow: rgba(45, 45, 45, 0.15); } }
-
 .virtualTour1 {
   margin-top: 30px; }
   .virtualTour1 .titleContainer {
@@ -1539,6 +1494,7 @@ p {
       margin-top: 0px;
       font-family: "Product-Sans-Regular", sans-serif;
       font-size: 30px; }
+
   .virtualTour2 {
     margin-top: 80px; }
     .virtualTour2 .titleContainer {
@@ -1565,20 +1521,18 @@ p {
         font-size: 30px; }
     .virtualTour2 img {
       margin-top: -20px; } }
-
 .contactForm {
   max-width: 300px;
   width: 300px;
-  height: 5900px;
-  max-height: 590px;
+  /*height: 5900px;*/
+  /*max-height: 590px;*/
   margin: auto;
   padding: 0px 0px 20px;
   display: grid;
   grid-gap: 0px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "messageContactForm"
- "bootstrapContactForm"; }
+  grid-template-areas: "messageContactForm" "bootstrapContactForm"; }
   .contactForm .messageContactForm {
     grid-area: messageContactForm;
     font-size: 30px;
@@ -1640,8 +1594,8 @@ p {
   .contactForm {
     max-width: 700px;
     width: 700px;
-    height: 445px;
-    max-height: 445px;
+    /*height: 445px;*/
+    /*max-height: 445px;*/
     margin-top: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -1656,7 +1610,6 @@ p {
         width: 100%; }
       .contactForm .bootstrapContactForm .form-contact .btn-primary {
         width: 40%; } }
-
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .contactForm {
     width: 910px;
@@ -1664,7 +1617,6 @@ p {
     grid-gap: 90px; }
     .contactForm .messageContactForm {
       padding: 75px 65px 15px 15px; } }
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -1701,7 +1653,6 @@ p {
     .footer .text {
       max-width: 50%;
       padding: 0px 10px 10px; } }
-
 @media screen and (min-width: 1024px) {
   .footer {
     flex-direction: row;
@@ -1712,7 +1663,6 @@ p {
     .footer .text {
       max-width: 50%;
       padding: 0px 10px 10px; } }
-
 .modal {
   z-index: 999999999; }
 
