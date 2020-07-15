@@ -77,6 +77,10 @@ p {
   height: 30px;
   width: 30px; }
 
+.icon-img {
+  height: 90px;
+  width: 90px; }
+
 .icon-arrowWhite {
   background-image: url("../images/icons/icone-seta.svg"); }
 
